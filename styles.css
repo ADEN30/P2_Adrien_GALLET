@@ -218,13 +218,13 @@ input
 .Hébergements_liste1_card
 {
     display: flex;
+    width: 30%;
     height: min-content;
     background-color: burlywood;
 }
 .figure1
 {
     margin: 0px;
-    width: 100%;
 }
 figcaption
 {
