@@ -176,8 +176,11 @@ input
 {
     color: black;
     font-size:0.7em;
-    margin: 1% auto;
-}.Principal a 
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+.Principal a 
 {
     text-decoration: none;
 }
@@ -185,7 +188,7 @@ input
 .Hébergements
 {
     width: 57%;
-    padding: 2%;
+    padding: 2% 0% 2% 2%;
     background-color: #F2F2F2;
     border-radius: 4%;
     margin-left: 2%;
@@ -195,7 +198,7 @@ input
    display: flex; 
    list-style: none;
    flex-wrap: wrap;
-   margin-left: -6%;
+   padding: 0%;
 }
 .Hébergements_liste1_card
 {
@@ -211,11 +214,16 @@ input
     border-radius: 20px;
     margin: 0px;
 }
+.Hébergements figcaption
+{
+    padding-left: 3%;
+}
 
 .figure1 p
 {
     color: black;
-    margin: 0px auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
     font-size: 0.7em;
 }
 
@@ -245,6 +253,11 @@ input
     background-color: white;
     padding: 0px;
 }
+
+.Plus 
+{
+    margin-bottom: 0%;
+}
 .Populaires
 {
     width: 30%;
@@ -258,13 +271,20 @@ input
     display: flex;
     justify-content: space-between;
 }
+.Populaires_titre i 
+{
+    color: black;
+}
 .Populaires img
 {
+    border-radius: 16px 0px 0px 16px;
     object-fit: cover;
-    width: 120px;
+    width: 45%;
 }
 .Populaires_liste
 {
+    display: flex;
+    flex-direction: column;
     justify-content: stretch;
     list-style:none;
     margin: 0%;
@@ -273,8 +293,25 @@ input
 .figure2
 {
     display: flex;
-    justify-content:space-between;
+    justify-content:stretch;
     margin: 2%;
+    border-radius: 16px;
+    padding: 5px;
+    height: 110px;
+    background-color: white;
+}
+.Populaires figcaption
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: stretch;
+    padding-left: 3%;
+}
+.figure2 p 
+{
+    color: black;
+    font-size: 0.7em;
 }
 .titre_activités
 {
@@ -293,37 +330,55 @@ input
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    list-style: none;;
     padding: 0px;
     margin: 0px;
+    width: 28%;
 }
-.liste3 li 
+#gauche
 {
-    display: flex;
-
+    margin-left:0%;
 }
-.Activités figure
+.figure3
 {
+    width: 25%;
+    margin: 0% 3%;
     background-color: white;
     border-radius: 15px;
-    margin: 0px;
     box-shadow: 3px 3px #f2f2f298;
 }
+.figure4
+{
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 3px 3px #f2f2f298;
+}
+
 .figure3 img
 {
-    height: 300px;
-    width: 220px;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
     border-radius: 15px 15px 0px 0px;
 }
 .figure4 img
 {
-    height:100px;
-    width:200px;
+    height:180px;
+    width:100%;
+    object-fit: cover;
     border-radius: 15px 15px 0px 0px;
 }
 
-.figure4 h2 , .figure3 h2
+.figure3 h2
 {
-    margin: 15px 0px 15px 0px;
+    padding-right: 20px;
+    padding-left: 5px;
+    font-size: 14px;
+}
+.figure4 h2
+{
     padding-right: 20px;
     padding-left: 5px;
     font-size: 14px;
@@ -347,8 +402,7 @@ footer
 
 .titre
 {
-    display: block;
-    margin: 0px 200px 30px 0px;
+    margin: 0px 25% 30px 0px;
     list-style: none;
     padding-left: 0px;
 }
