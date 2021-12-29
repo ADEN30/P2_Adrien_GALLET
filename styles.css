@@ -3,7 +3,7 @@
     font-family: 'perso';
     src: url(ressources/texte/Raleway-VariableFont_wght.ttf);
 }
-@media all and (min-width:992px){
+
 body
 {
     width: auto;
@@ -11,12 +11,11 @@ body
     font-family: perso;
 }
 
-
 header 
 {
     display: flex;
     justify-content: space-between;
-    margin : 40px;
+    margin : 2%;
 }
 #logo
 {
@@ -149,7 +148,6 @@ input
     padding-right: 12px;
 }
 
-
 .logements i
 {
     margin-right: 10px;
@@ -166,73 +164,118 @@ input
     display:flex;
     justify-content: space-between;
     width: 100%;
-    height: min-content;
+    padding: 0%;
+}
+.Principal h1
+{
+    color: black;
+    font-size: 0.9em;
+    margin-top: 0px;
 }
 .Principal h2
 {
-    font-size:90%;
+    color: black;
+    font-size:0.7em;
+    margin: 1% auto;
+}.Principal a 
+{
+    text-decoration: none;
 }
 
+.Hébergements
+{
+    width: 57%;
+    padding: 2%;
+    background-color: #F2F2F2;
+    border-radius: 4%;
+    margin-left: 2%;
+}
+.figures
+{
+   display: flex; 
+   list-style: none;
+   flex-wrap: wrap;
+   margin-left: -6%;
+}
+.Hébergements_liste1_card
+{
+    margin: 0% 2% 2% 0%;
+    width: 30%;
+}
+.figure1
+{
+    height:155px;
+    background-color: white;
+    padding: 5px;
+    margin-bottom:10px;
+    border-radius: 20px;
+    margin: 0px;
+}
+
+.figure1 p
+{
+    color: black;
+    margin: 0px auto;
+    font-size: 0.7em;
+}
+
+.Hébergements img 
+{
+    width: 100%;
+    height: 60%;
+    border-radius: 16px 16px 0px 0px;
+    object-fit: cover;
+}
 .étoiles2
 {
     display: flex;
     padding: 0px;
     width:min-content;
-    border: 2px solid green;
-
+    list-style: none;
 }
 .étoiles2 li 
 {
-    display: flex;
     margin:0px;
     color:#0065FC;
 }
 .étoiles2 li i 
 {
+    list-style: none;
     font-size: 10px;
     background-color: white;
     padding: 0px;
 }
-
-.Hébergements
+.Populaires
 {
-    width:67%;
-    list-style: none;
-    margin-right: 5%;
-    background-color: beige;
+    width: 30%;
+    background-color: #F2F2F2;
+    border-radius: 4%;
+    margin-right: 2%;
+    padding: 2%;
 }
-.Hébergement_liste
+.Populaires_titre
 {
     display: flex;
     justify-content: space-between;
+}
+.Populaires img
+{
+    object-fit: cover;
+    width: 120px;
+}
+.Populaires_liste
+{
+    justify-content: stretch;
     list-style:none;
-    width: 95%;
-    background-color: brown;
+    margin: 0%;
+    padding: 0%;
 }
-.Hébergements_liste1_card
+.figure2
 {
     display: flex;
-    width: 30%;
-    height: min-content;
-    background-color: burlywood;
+    justify-content:space-between;
+    margin: 2%;
 }
-.figure1
-{
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-}
-figcaption
-{
-    margin: 0px;
-}
-
-.Principal img
-{
-    width: 100%;
-    height: 40%;
-}
-
 .titre_activités
 {
     margin-left: 20px;
@@ -292,8 +335,6 @@ figcaption
     color:#dddddd;
 }
 
-
-
 footer
 {
     display: flex;
@@ -325,8 +366,6 @@ footer
     color: black;
 }
 
-}
-
 
 
 
@@ -336,7 +375,6 @@ footer
 {
 
 }
-
 
 
 @media all and (max-width: 768px) {
