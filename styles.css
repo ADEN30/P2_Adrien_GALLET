@@ -1,14 +1,21 @@
 @font-face
 {
-    font-family: 'perso';
+    font-family: 'Raleway';
     src: url(ressources/texte/Raleway-VariableFont_wght.ttf);
+    
 }
+@font-face {
+    font-family: 'Raleway_bold';
+    src: url(ressources/texte/Raleway-VariableFont_wght_bold.ttf);
+}
+
+    
 
 body
 {
     width: auto;
     margin: auto;
-    font-family: perso;
+    font-family: Raleway;
 }
 
 header 
@@ -46,6 +53,7 @@ header nav ul li a:hover
  h1
 {
     font-size: 23px;
+    font-family: Raleway_bold;
     font-weight: bold;
     margin-top: 50px;
     margin-bottom: none;
@@ -81,7 +89,7 @@ input
     width: 240px;
     padding-left: 10px;
     color: none;
-    
+   
 }
 .search:focus
 {
@@ -158,7 +166,6 @@ input
     border-radius: 50px;
     color: #0065FC;
 }
-
 .Principal
 {
     display:flex;
@@ -169,15 +176,13 @@ input
 .Principal h1
 {
     color: black;
-    font-size: 0.9em;
+    font-family: Raleway_bold;
     margin-top: 0px;
 }
 .Principal h2
 {
+    font-family: Raleway_bold;
     color: black;
-    font-size:0.7em;
-    margin-top: 1%;
-    margin-bottom: 3%;
 }
 
 .Principal a 
@@ -207,7 +212,8 @@ input
 }
 .figure1
 {
-    height:155px;
+    display: flex;
+    flex-direction: column;
     background-color: white;
     padding: 5px;
     margin-bottom:10px;
@@ -216,15 +222,17 @@ input
 }
 .Hébergements figcaption
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding-left: 3%;
 }
+
 
 .figure1 p
 {
     color: black;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    font-size: 0.7em;
+    
 }
 
 .Hébergements img 
@@ -238,21 +246,13 @@ input
 {
     display: flex;
     padding: 0px;
-    width:min-content;
     list-style: none;
 }
 .étoiles2 li 
 {
-    margin:0px;
     color:#0065FC;
 }
-.étoiles2 li i 
-{
-    list-style: none;
-    font-size: 10px;
-    background-color: white;
-    padding: 0px;
-}
+
 
 .Plus 
 {
@@ -279,7 +279,6 @@ input
 {
     border-radius: 16px 0px 0px 16px;
     object-fit: cover;
-    width: 45%;
 }
 .Populaires_liste
 {
@@ -297,7 +296,6 @@ input
     margin: 2%;
     border-radius: 16px;
     padding: 5px;
-    height: 110px;
     background-color: white;
 }
 .Populaires figcaption
@@ -306,7 +304,9 @@ input
     flex-direction: column;
     justify-content: space-between;
     justify-items: stretch;
-    padding-left: 3%;
+    padding-left: 6%;
+    padding-right: 14%;
+    padding-bottom: 2%;
 }
 .figure2 p 
 {
@@ -402,9 +402,10 @@ footer
 
 .titre
 {
-    margin: 0px 25% 30px 0px;
+    margin: 0px 15% 30px 0px;
     list-style: none;
     padding-left: 0px;
+    width: 90%;
 }
 .titre li 
 {
@@ -421,11 +422,79 @@ footer
 }
 
 
+@media screen and (max-width:1200px)
+{
+    .Principal h1
+    {
+        font-size: 1em;
+    }
+
+    .Principal h2
+    {
+        font-size:0.8em;
+        width: 100%;
+    }
+    .figure1 p
+    {
+        font-size: 0.6em;
+        margin-bottom: 2%;
+    }
+    .figure1
+    {
+        height:165px;
+    }
+    .figure2
+    {
+        height: 120px;
+    }
+    .Populaires img
+    {    
+        width: 40%;
+    }
+    .étoiles2 li i 
+    {
+        font-size: 0.4em;
+    }
+        
+}
+@media screen and (min-width: 1201px) and (max-width:1440px)
+{
+    .Principal h1
+    {
+        font-size: 1.2em;
+    }
+    .Principal h2
+    {
+        font-size:1em;
+        margin-bottom: 0%;
+    }
+    .figure1 p
+    {
+        margin-top: 2%;
+        font-size: 0.8em;
+        margin-bottom: 3%;
+    }
+    .figure1
+    {
+        height:200px;
+    }
+    .figure2
+    {
+        height: 140px;
+    }
+    .Populaires img
+    {    
+        width: 40%;
+    }
+    .étoiles2 li i 
+    {
+        font-size: 0.6em;
+    }
+}
 
 
 
-
-@media all and (min-width:768px) and (max-width:991px)
+@media all and (min-width:768px) and (max-width:992px)
 {
 
 }
