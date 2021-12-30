@@ -6,7 +6,7 @@
 }
 @font-face {
     font-family: 'Raleway_bold';
-    src: url(ressources/texte/Raleway-VariableFont_wght_bold.ttf);
+    src: url(ressources/texte/Raleway/static/Raleway-ExtraBold.ttf);
 }
 
     
@@ -117,30 +117,25 @@ input
     border-right: none;
     height: 50px;
     width : 50px;
-    
 }
 
 .filtres
 {
     display: flex;
-    font-size: 10px;
-
+    justify-content: space-between;
+    list-style: none;
+    padding: 0px;
+    width: 65%;
+    font-family: Raleway_bold;
+    margin-top: 30px;
 }
-
-.filtres ul 
+.filtres li 
 {
-    display: flex;
-    
-}
-.filtres ul li 
-{
-    margin-right: 50px;
+    padding-right: 10px;
     color: black;
-    border : 1px solid #d1d0d0;
+    border : 2px solid #d1d0d04d;
     border-radius: 50px;
     border-left: none;
-    list-style: none;
-    padding-right: 10px;
 }
 .filtres i 
 {
@@ -148,14 +143,22 @@ input
     border-radius: 100px;
     background-color: #DEEBFF;
     padding: 10px;
-    margin: -1px 5px -1px 0px;
+    margin: -2px 1px -2px 0px;
+}
+.filtres .filtre_titre
+{
+    padding-top: 10px;
+    border: 0px;
 }
 #Familial
 {
     padding-left: 12px;
     padding-right: 12px;
 }
-
+.logements
+{
+    margin: 2% auto;
+}
 .logements i
 {
     margin-right: 10px;
@@ -192,7 +195,7 @@ input
 
 .Hébergements
 {
-    width: 57%;
+    width: 56%;
     padding: 2% 0% 2% 2%;
     background-color: #F2F2F2;
     border-radius: 4%;
@@ -207,9 +210,11 @@ input
 }
 .Hébergements_liste1_card
 {
-    margin: 0% 2% 2% 0%;
+    margin-right: 3%; 
+    margin-bottom: 3%;
     width: 30%;
 }
+
 .figure1
 {
     display: flex;
@@ -270,6 +275,7 @@ input
 {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 }
 .Populaires_titre i 
 {
@@ -280,6 +286,7 @@ input
     border-radius: 16px 0px 0px 16px;
     object-fit: cover;
 }
+
 .Populaires_liste
 {
     display: flex;
@@ -305,7 +312,7 @@ input
     justify-content: space-between;
     justify-items: stretch;
     padding-left: 6%;
-    padding-right: 14%;
+    padding-right: 12%;
     padding-bottom: 2%;
 }
 .figure2 p 
@@ -333,24 +340,22 @@ input
     list-style: none;;
     padding: 0px;
     margin: 0px;
-    width: 28%;
+    width: 25%;
 }
-#gauche
-{
-    margin-left:0%;
-}
+
 .figure3
 {
-    width: 25%;
-    margin: 0% 3%;
+    width: 20%;
+    margin: 0%;
     background-color: white;
     border-radius: 15px;
     box-shadow: 3px 3px #f2f2f298;
 }
-.figure4
+
+.figure4 ,.figure5
 {
     width: 100%;
-    margin: auto;
+    margin:0%;
     background-color: white;
     border-radius: 15px;
     box-shadow: 3px 3px #f2f2f298;
@@ -365,23 +370,29 @@ input
 }
 .figure4 img
 {
-    height:180px;
+    height:200px;
     width:100%;
     object-fit: cover;
     border-radius: 15px 15px 0px 0px;
 }
-
-.figure3 h2
+.figure5 img
 {
-    padding-right: 20px;
-    padding-left: 5px;
+    height:105px;
+    width:100%;
+    object-fit:cover;
+    border-radius: 15px 15px 0px 0px;
+}
+.figure3 h2, .figure5 h2
+{
+    padding: 15px;
     font-size: 14px;
+    margin: 0;
 }
 .figure4 h2
 {
-    padding-right: 20px;
-    padding-left: 5px;
+    padding: 15px;
     font-size: 14px;
+    margin: 0;
 }
 
 .etoile_vide i
@@ -424,6 +435,14 @@ footer
 
 @media screen and (max-width:1200px)
 {
+    .filtres
+    {
+        font-size: 0.7em;
+    }
+    .logements
+    {
+        font-size: 0.6em;
+    }
     .Principal h1
     {
         font-size: 1em;
@@ -433,9 +452,11 @@ footer
     {
         font-size:0.8em;
         width: 100%;
+        margin-bottom: 2%;
     }
     .figure1 p
     {
+        margin-top: 0%;
         font-size: 0.6em;
         margin-bottom: 2%;
     }
@@ -459,6 +480,14 @@ footer
 }
 @media screen and (min-width: 1201px) and (max-width:1440px)
 {
+    .filtres
+    {
+        font-size: 0.9em;
+    }
+    .logements
+    {
+        font-size: 0.8em;
+    }
     .Principal h1
     {
         font-size: 1.2em;
@@ -466,13 +495,13 @@ footer
     .Principal h2
     {
         font-size:1em;
-        margin-bottom: 0%;
+        margin-bottom: 0;
     }
     .figure1 p
     {
         margin-top: 2%;
         font-size: 0.8em;
-        margin-bottom: 3%;
+        margin-bottom: 2%;
     }
     .figure1
     {
@@ -480,7 +509,7 @@ footer
     }
     .figure2
     {
-        height: 140px;
+        height: 150px;
     }
     .Populaires img
     {    
