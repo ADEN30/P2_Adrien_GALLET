@@ -334,7 +334,6 @@ input
     justify-content: space-between;
     margin: 20px;
     border-radius: 20px;
-    height: 500px;
 }
 
 .liste3
@@ -352,16 +351,23 @@ input
 
 .figure3
 {
-    width: 23%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 22%;
+    height: 400px;
     background-color: white;
     border-radius: 15px;
     box-shadow: 3px 3px #f2f2f298;
     margin: 0;
+    
 }
 
 .figure4, .figure5
 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
     background-color: white;
     border-radius: 15px;
     box-shadow: 3px 3px #f2f2f298;
@@ -372,8 +378,20 @@ input
 .Activités img
 {
     width: 100%;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 15px 15px 15px 15px;
     object-fit: cover;
+    z-index: 1;
+}
+.Activités figcaption
+{
+    border-radius: 0px 0px 15px 15px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    padding: 15px 0px;
+    z-index: 2;
+    background-color: white;
+    
 }
 .figure3 h2, .figure5 h2, .figure4 h2
 {
@@ -383,7 +401,6 @@ input
 footer
 {
     display: flex;
-    
     padding-left: 20px;
     padding-top: 10px;
     background-color: #F2F2F2;
@@ -459,7 +476,10 @@ footer
     .Activités
     {
         font-size: 0.6em;
-        height: 300px;
+    }
+    .Activités h2
+    {
+        padding-left: 10px;
     }
     .figure4
     {
@@ -471,10 +491,8 @@ footer
     }
     .figure3 img
     {
-        
-        height: 80%;
-        object-position: 28% ;
-        border-radius: 15px 15px 0px 0px;
+        height: 100%;
+        object-position: 57%
     }
     .figure4 img
     {
@@ -485,10 +503,7 @@ footer
         height: 80%;
         object-position: 100% 30%;
     }
-    .figure3 h2, .figure5 h2, .figure4 h2
-    {
-        
-    }
+    
 }
 @media screen and (min-width: 1201px) and (max-width:1440px)
 {
