@@ -334,7 +334,7 @@ input
     justify-content: space-between;
     margin: 20px;
     border-radius: 20px;
-    height: 400px;
+    height: 500px;
 }
 
 .liste3
@@ -353,6 +353,7 @@ input
 .figure3
 {
     width: 23%;
+    height: 100%;
     background-color: white;
     border-radius: 15px;
     box-shadow: 3px 3px #f2f2f298;
@@ -472,7 +473,8 @@ footer
     {
         
         height: 80%;
-        object-position: 28% 30px;
+        object-position: 28% ;
+        border-radius: 15px 15px 0px 0px;
     }
     .figure4 img
     {
@@ -481,7 +483,7 @@ footer
     .figure5 img
     {
         height: 80%;
-        object-position: top;
+        object-position: 100% 30%;
     }
     .figure3 h2, .figure5 h2, .figure4 h2
     {
