@@ -257,6 +257,10 @@ input
 {
     color:#0065FC;
 }
+.étoiles2 .etoile-gris
+{
+    color: #80808059;
+}
 
 
 .Plus 
@@ -330,6 +334,7 @@ input
     justify-content: space-between;
     margin: 20px;
     border-radius: 20px;
+    height: 400px;
 }
 
 .liste3
@@ -340,74 +345,48 @@ input
     list-style: none;;
     padding: 0px;
     margin: 0px;
-    width: 25%;
+    width: 22%;
+    margin: 0px;
 }
+
 
 .figure3
 {
-    width: 20%;
-    margin: 0%;
+    width: 23%;
     background-color: white;
     border-radius: 15px;
     box-shadow: 3px 3px #f2f2f298;
+    margin: 0;
 }
 
-.figure4 ,.figure5
+.figure4, .figure5
 {
-    width: 100%;
-    margin:0%;
     background-color: white;
     border-radius: 15px;
     box-shadow: 3px 3px #f2f2f298;
+    height: 200px;
+    margin: 2%;
 }
 
-.figure3 img
+.Activités img
 {
-    height: 400px;
     width: 100%;
+    border-radius: 15px 15px 0px 0px;
     object-fit: cover;
-    border-radius: 15px 15px 0px 0px;
 }
-.figure4 img
+.figure3 h2, .figure5 h2, .figure4 h2
 {
-    height:200px;
-    width:100%;
-    object-fit: cover;
-    border-radius: 15px 15px 0px 0px;
-}
-.figure5 img
-{
-    height:105px;
-    width:100%;
-    object-fit:cover;
-    border-radius: 15px 15px 0px 0px;
-}
-.figure3 h2, .figure5 h2
-{
-    padding: 15px;
-    font-size: 14px;
     margin: 0;
-}
-.figure4 h2
-{
-    padding: 15px;
-    font-size: 14px;
-    margin: 0;
-}
-
-.etoile_vide i
-{
-    
-    color:#dddddd;
 }
 
 footer
 {
     display: flex;
+    
     padding-left: 20px;
     padding-top: 10px;
     background-color: #F2F2F2;
-    font-family: perso;
+    font-family: Raleway;
     margin-top: 40px;
 }
 
@@ -476,7 +455,38 @@ footer
     {
         font-size: 0.4em;
     }
+    .Activités
+    {
+        font-size: 0.6em;
+        height: 300px;
+    }
+    .figure4
+    {
+        height: 150px;
+    }
+    .figure5
+    {
+        height: 85px;
+    }
+    .figure3 img
+    {
         
+        height: 80%;
+        object-position: 28% 30px;
+    }
+    .figure4 img
+    {
+        height: 80%;
+    }
+    .figure5 img
+    {
+        height: 80%;
+        object-position: top;
+    }
+    .figure3 h2, .figure5 h2, .figure4 h2
+    {
+        
+    }
 }
 @media screen and (min-width: 1201px) and (max-width:1440px)
 {
@@ -518,6 +528,23 @@ footer
     .étoiles2 li i 
     {
         font-size: 0.6em;
+    }
+    .figure3 img
+    {
+        height: 350px;
+    }
+    .figure4 img
+    {
+        height:200px;
+    }
+    .figure5 img
+    {
+        height:105px;
+    }
+    .figure3 h2, .figure5 h2, .figure4 h2
+    {
+        padding: 12px;
+        font-size: 14px;
     }
 }
 
