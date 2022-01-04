@@ -12,12 +12,12 @@
     </head>
     <body>
         <header>
-            <div><img id="logo" src="ressources/images/logo/Booki.png" alt=""></div>
+            <div><img class="logo" src="ressources/images/logo/Booki.png" alt=""></div>
             
             <nav> 
             <ul>
-                <li><a href="#"> Hébergements</a></li>
-                <li> <a href="#"> Activités</a></li>
+                <a class="test" href="#"><li>Hébergements</li></a>
+                <a  class="test" href="#"> <li> Activités</li></a>
             </ul>
             </nav>
           
@@ -25,19 +25,26 @@
 
         <section class="recherche">
 
-            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p class="p">En plein centre ville ou en pleine nature</p>
 
             <form action="post">
-                <p> <img src="ressources/Icone/Logo 500x500 px2.jpeg" alt="" id="img_localisation"><input class="search"  type="search" placeholder="Entrez la ville de votre choix"> <input type="submit" value="Rechercher" name="inconu" class="bouton"></p>
+                <p class="barre_recherche"> <img src="ressources/Icone/Logo 500x500 px2.jpeg" alt="" id="img_localisation"><input class="search"  type="search" value="Marseille, France"> <input type="submit" value="Rechercher" name="inconu" class="bouton"></p>
             </form>
-                    <ul class="filtres">
-                        <li class="filtre_titre">Filtres</li>
-                        <li><i class="fas fa-money-bill-wave"></i> <span> Économique</span></li>
-                        <li> <i id="Familial" class="fas fa-child"></i> <span>Familial</span> </li>
-                        <li> <i class="fas fa-heart"></i> <span> Romantique</span></li>
-                        <li> <i class="fas fa-dog"></i><span> Animaux autorisés</span></li>
-                    </ul> 
+            <div class="filtres">
+                <h2>Filtres</h2>
+                    <a href="#"> <p><i class="fas fa-money-bill-wave"> </i>Économique</p></a>
+                    <a href="#"> <p><i id="Familial" class="fas fa-child"></i>Familial</p></a>
+                    <a href="#"> <p><i class="fas fa-heart"></i>Romantique</p></a>
+                    <a href="#"> <p><i class="fas fa-dog"></i>Animaux autorisés</p></a>
+            </div>
+                   <!--<ul class="filtres">
+                        <a href="#" class="filtre_titre"><li >Filtres</li></a>
+                        <a href="#"><li><i class="fas fa-money-bill-wave"></i> <span> Économique</span></li></a>
+                        <a class="Familial"  href="#"><li> <i id="Familial" class="fas fa-child"></i> <span>Familial</span> </li></a>
+                        <a href="#"><li> <i class="fas fa-heart"></i> <span> Romantique</span></li></a>
+                        <a href="#"><li> <i class="fas fa-dog"></i><span> Animaux autorisés</span></li></a>
+                    </ul>--> 
                 <p class="logements"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette villes</p>
          </section >
          
@@ -213,47 +220,57 @@
         <section >
             <h1 class="titre_activités">Activités à Marseille</h1>
             <div class="Activités">
-            <figure id="gauche" class="figure3"><img src="ressources/images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
+            <a class="trois" href="#"><figure id="gauche" class="figure3"><img src="ressources/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
                 <figcaption>
                     <h2>Vieux Port</h2>
                 </figcaption>
+            
             </figure>
+        </a>
             <ul class="liste3">
                 <li>
-                    <figure class="figure4"> <img src="ressources/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
+                    <a href="#"><figure class="figure4"> <img src="ressources/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
                         <figcaption>
                             <h2>Fort de Pomègues</h2>
                         </figcaption>
-                    </figure>
+                    </figure></a>
                 </li>
+            
+            
                 <li class="card_second">
-                    <figure class="figure5"> <img src="ressources/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
+                    <a href="#"><figure class="figure5"> <img src="ressources/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
                         <figcaption>
                             <h2>Îles du Frioul</h2>
                         </figcaption>
-                </figure>
+                </figure></a>
             </li>
+        
             </ul>
-            <figure class="figure3"> <img src="ressources/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
+           
+               <a class="six" href="#"> <figure class="figure6"><img src="ressources/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
                 <figcaption>
                     <h2>Parc National des Calanques</h2>
                 </figcaption>
-            </figure>
+            </figure></a>
+        
             <ul class="liste3">
-                <li>
-                    <figure class="figure5"> <img src="ressources/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
+               
+                    <li>
+                   <a href="#"><figure class="figure7">  <img src="ressources/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
                         <figcaption>
                             <h2>Notre-Dame-de-la-Garde</h2>
                         </figcaption>
-                    </figure>
+                    </figure> </a>
                 </li>
+           
                 <li class="card_second">
-                    <figure  class="figure4"> <img src="ressources/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
+                  <a href="#">  <figure  class="figure8"> <img src="ressources/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
                         <figcaption>
                             <h2>Parc Longchamp</h2>
                         </figcaption>
-                    </figure>
+                    </figure></a>
                 </li>
+            
             </ul>
         </div>
         </section>
