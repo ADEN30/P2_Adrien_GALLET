@@ -10,11 +10,11 @@
 }
 
     
-
+*{
+    margin: 0;
+}
 body
 {
-    width: auto;
-    margin: auto;
     font-family: Raleway;
 }
 
@@ -53,7 +53,11 @@ header nav ul li
     text-decoration: none;
     color: black;
 }
-.recherche
+.loupe
+{
+    display: none;
+}
+.rechercher
 {
     margin-left: 2%;
 }
@@ -67,11 +71,8 @@ header nav ul li
     font-size:17px;
     font-weight:300;
 }
-.p
-{
-    margin-top: -10px;
-}
- form p{
+
+ .barre_recherche{
     display: flex;
     width: 32%;
 }
@@ -93,6 +94,7 @@ input
     width: 55%;
     padding-left: 10px;
     color: black;
+    height: auto;
    
 }
 .search:focus
@@ -131,6 +133,7 @@ input
     width: 80%;
     font-family: Raleway_bold;
     align-items: baseline;
+    margin: 2% 0px 0px 0px;
 }
 .filtres_liste
 {
@@ -155,7 +158,11 @@ input
 {
     text-decoration: none;
     color: black;
-    
+    margin-bottom: 3%;
+}
+.filtres a:hover
+{
+    color:cadetblue;
 }
 .filtres i 
 {
@@ -173,7 +180,10 @@ input
 
 .logements
 {
+    display: flex;
     margin: 2% auto;
+    margin-top:0px;
+    align-items: baseline;
 }
 .logements i
 {
@@ -184,6 +194,7 @@ input
     padding: 4px 8px 4px 8px;
     border-radius: 50px;
     color: #0065FC;
+    height: max-content;
 }
 .Principal
 {
@@ -202,6 +213,7 @@ input
 {
     font-family: Raleway_bold;
     color: black;
+    margin-top: 4%;
 }
 
 .Principal a 
@@ -341,16 +353,18 @@ input
 .figure2 p 
 {
     color: black;
+    margin-top: 6%;
 }
 .titre_activités
 {
-    margin-left: 20px;
+    margin-left: 2%;
+    margin-top: 5%;
 }
 .Activités
 {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin: 2%;
     border-radius: 20px;
 }
 
@@ -484,7 +498,7 @@ footer a
     }
     .filtres    { font-size: 0.6em;}
     .logements  { font-size: 0.6em;}
-    .Principal h1    { font-size: 1em; }
+    .Principal h1, .Principal a    { font-size: 1em; }
 
     .Principal h2
     {
@@ -537,31 +551,31 @@ footer a
     }
     .Activités figcaption
     {
-        padding: 10px 0px;
+        padding: 11px 0px;
     }
     .figure3
     {
-        height: 300px;
+        height: 320px;
     }
     .figure4
     {
-        height: 160px;
+        height: 170px;
     }
     .figure5 
     {
-        height: 105px;
+        height: 115px;
     }
     .figure6
     {
-        height: 300px;
+        height: 320px;
     }
     .figure7
     {
-        height: 128px;
+        height: 145px;
     }
     .figure8
     {
-        height: 140px;
+        height: 138px;
     }
     .H1
     {
@@ -569,7 +583,7 @@ footer a
     }
     footer a
     {
-        font-size: 0.4em;
+        font-size: 0.6em;
     }
 }
 @media screen and (min-width: 1101px) and (max-width: 1200px)
@@ -605,7 +619,7 @@ footer a
     {
         font-size: 0.6em;
     }
-    .Principal h1
+    .Principal h1, .Principal a
     {
         font-size: 1.1em;
     }
@@ -645,7 +659,7 @@ footer a
     }
     .Activités figcaption
     {
-        padding: 10px 0px;
+        padding: 13px 0px;
     }
     #img_localisation
     {
@@ -653,35 +667,35 @@ footer a
     }
     .figure3
     {
-        height: 300px;
+        height: 340px;
     }
     .figure4
     {
-        height: 160px;
+        height: 180px;
     }
     .figure5 
     {
-        height: 105px;
+        height: 125px;
     }
     .figure6
     {
-        height: 300px;
+        height: 340px;
     }
     .figure7
     {
-        height: 128px;
+        height: 145px;
     }
     .figure8
     {
-        height: 140px;
+        height: 157px;
     }
     .H1
     {
-        font-size: 1em;
+        font-size: 0.7em;
     }
     footer a
     {
-        font-size: 0.8em;
+        font-size: 0.6em;
     }
 }
 @media screen and (min-width: 1201px) and (max-width: 1300px)
@@ -717,7 +731,7 @@ footer a
     {
         font-size: 0.7em;
     }
-    .Principal h1
+    .Principal h1, .Principal .Populaires_titre a
     {
         font-size: 1.4em;
     }
@@ -749,7 +763,7 @@ footer a
     }
     .Activités
     {
-        font-size: 0.8em;
+        font-size: 0.6em;
     }
     .Activités h2
     {
@@ -779,21 +793,21 @@ footer a
     {
         height: 400px;
     }
-    .figure7
+    .figure7    
     {
-        height: 190px;
+        height: 175px;
     }
     .figure8
     {
-        height: 210px;
+        height: 185px;
     }
     .H1
     {
-        font-size: 1em;
+        font-size: 0.8em;
     }
     footer a
     {
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
 }
 @media screen and (min-width: 1301px) and (max-width: 1440px)
@@ -836,7 +850,7 @@ footer a
     {
         font-size: 0.8em;
     }
-    .Principal h1
+    .Principal h1, .Principal .Populaires_titre a
     {
         font-size: 1.5em;
     }
@@ -917,7 +931,7 @@ footer a
     }
     .H1
     {
-        font-size: 1em;
+        font-size: 0.9em;
     }
     footer a
     {
@@ -926,93 +940,246 @@ footer a
 }
 
 
-@media all and (max-width: 767px) 
+@media all and (max-width: 768px) 
 {
-
-    body
+    *{
+        margin: 0px;
+    }
+    .Activités img 
     {
-        text-align: center;
+        width: 100%;
+        object-position: center;
     }
     header
     {
         display: flex;
         flex-direction: column;
-        margin: auto 0px
     }
-    .logo
+    .block_image
     {
-        margin-left: auto;
+        text-align: center;
     }
-    header ul 
+    .logo 
     {
-        display: flex;
-        justify-content: space-around;
-        padding:0px;
+        height: 50px;
+        padding: 20px;
     }
-    header nav ul li
+    header nav 
+    {
+        border-bottom: 1px solid;
+        margin: 0px -2%;
+        
+    }
+    header nav  ul 
     {
         padding: 0px;
-        
     }
-    header nav ul a 
+     header nav ul li 
     {
+        text-align: center;
         width: 50%;
-        border-bottom: 3px solid grey;
-        padding-bottom: 10px;
+        padding-left: 0%;
     }
-    header nav ul a:hover
+    .rechercher 
     {
-        border-bottom: 3px solid blue;
-        
+        padding: 0px 3%;
     }
-    .recherche
+    .rechercher h1 
     {
-        margin: auto 4%;
+        padding-top: 10%;
     }
-    .recherche h1 
+    .p 
     {
-        width: 80%;
-        text-align: left;
+        margin-top: 2%;
     }
-    .recherche .p
+    .bouton
     {
-        text-align: left;
-        
+        display: none;
     }
-    .barre_recherche
+    .search
+    {
+        width: 85%;
+    }
+    #img_localisation
+    {
+        object-fit: cover;
+    }
+    .loupe
+    {
+        display: block;
+        border: 0px ;
+        background-color: #0065FC;
+        border-radius: 15px;
+        width: 52px;
+        margin-left: -2%;
+    }
+    .barre_recherche 
     {
         width: 100%;
+        padding-top: 6%;
+        padding-bottom: 6%
     }
     .filtres
     {
+        display: block;
+        width: 100%;
+    }
+    .filtres h2
+    {
+        width: auto;
+    }
+    .filtres_liste 
+    {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        width: 95%;
+        font-size: 1em;
+        padding-top: 5%;
+    }
+    .filtres_a 
+    {
+        margin-right: 2%;
+    }
+    .filtres i 
+    {
+        padding: 18px;
+    }
+    #Familial
+    {
+        padding-left: 20px;
+        padding-right:20px;
+    }
+    .logements 
+    {
+        padding: 5% 0px;
+    }
+    .Principal
+    {
+        display: flex;
+        flex-direction: column-reverse;
         width: 100%;
-        height: max-content;
+        padding: 0px;
+    }
+    .Principal h2
+    {
+        margin-top: 2%;
+    }
+
+    .Hébergements
+    {
+        width: 100%;
+        margin: 0px;
+        border-radius: 0;
+        background-color: white;
+        padding: 3%;
+    }
+
+    .figures 
+    {
+        display: block;
+    }
+    .figure1 
+    {
+        width: 90%;
+        box-shadow: 0px 0px 10px #0000002b;
+    }
+    .Populaires
+    {
+        padding: 3%;
+        border-radius: 0px;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .figure2
+    {
+        width: 90%;
+    } 
+    .figure2 figcaption
+    {
+        padding: 2% 0% 2% 5%;
+    }
+    .figure2 p 
+    {
+        margin-top: 6%;
+    }
+    .Activités
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .trois, .liste3, .six
+    {
+        width: 100%;
+    }
+    .figure3, .figure4, .figure5, .figure6, .figure7, .figure8
+    {
+        margin-bottom: 10%;
+        height: 185px; 
+        box-shadow: 0px 0px 10px #0000002b;
+    }
+
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+       
     }
     
-    .filtres a 
+}
+
+@media screen and (max-width: 374px)
+{
+    .filtres_liste
     {
-        width: max-content;
-        margin: 0px;
-        font-size: 1.2em;
-        margin-bottom: 2%;
+        width: 100%;
+        font-size: 0.9em;
     }
-    .filtre_titre
+    #Familial
     {
-        font-size: 1.3em;
+        padding-left: 17px;
+        padding-right:17px;
     }
-    span 
+    .filtres i 
     {
-        padding: 20px 10px;
+        padding: 14px;
+    }
+    .logements, .logements i 
+    {
+        font-size: 0.6em;
+    }
+    .logements i 
+    {
+        padding: 5px 7px;
     }
 }
-@media screen and (max-width: 643px)
+@media screen and (min-width: 375px) and (max-width: 467px)
 {
-   
-}
-@media screen and (max-width: 352px)
-{
-    .filtres :nth-child(3) {order:2}
-    .filtres :nth-child(5) {order:1}
+    .Princpal h1, .Populaires_titre i  
+    {
+        font-size: 1.1em;
+    }
+    .Principal h2
+    {
+        font-size: 1.1em;
+        margin-top: 2%;
+    }
+    .Principal p 
+    {
+        font-size: 0.9em;
+    }
+    .figure1 
+    {
+        height: 200px;
+    }
+    .figure2 
+    {
+        height: 150px;
+    }
+    .étoiles2 li i 
+    {
+        font-size: 0.8em;
+    }
+    
 }
