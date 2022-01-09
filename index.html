@@ -6,8 +6,8 @@
         <title>Booki</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" media="screen and (max-width: 768px)" href="styles.css">
-        <link rel="stylesheet" media="all and (min-width: 992px)" href="styles.css">
-        <link rel="stylesheet" media="all and (min-width:768px) and (max-width:991px)"  href="styles.css">
+        <link rel="stylesheet" media="screen and (min-width: 992px)" href="styles.css">
+        <link rel="stylesheet" media="screen and (min-width:769px) and (max-width:991px)"  href="styles.css">
         <script src="https://kit.fontawesome.com/a28a51ba9f.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -16,8 +16,8 @@
             
             <nav> 
             <ul>
-                <li><a class="navigation1" href="#">Hébergements</a></li>
-                <li><a  class="navigation2" href="#">  Activités</a></li>
+                <li><a class="navigation1" href="#lien_hébergements">Hébergements</a></li>
+                <li><a  class="navigation2" href="#lien_activités">  Activités</a></li>
             </ul>
             </nav>
           
@@ -29,7 +29,7 @@
             <p class="p">En plein centre ville ou en pleine nature</p>
 
             <form action="post">
-                <div class="barre_recherche"> <img src="ressources/Icone/Logo 500x500 px2.jpeg" alt="" id="img_localisation"><input class="search"  type="search" value="Marseille, France"> <input type="submit" value="Rechercher" name="inconu" class="bouton"> <button type="bouton" class="loupe"><i class="fas fa-search"></i></button></div>
+                <div class="barre_recherche"> <img src="ressources/Icone/Logo 500x500 px2.jpeg" alt="" id="img_localisation"><input class="search"  type="search" value="Marseille, France"> <input type="submit" value="Rechercher" name="inconu" class="bouton"> <button type="button" class="loupe"><i class="fas fa-search"></i></button></div>
             </form>
             <div class="filtres">
                 <h2>Filtres</h2>
@@ -51,11 +51,11 @@
          </section >
          
          <section class="Principal">
-            <div class="Hébergements">
+            <div class="Hébergements" id="lien_hébergements">
                 <h1>Hébergements à Marseille</h1>
                 <ul class="figures">
-                    <a class="Hébergements_liste1_card" href="#">
-                    <li class="card_marge"> 
+                    
+                    <li  class="Hébergements_liste1_card"> <a  href="#">
                         <figure class="figure1"><img src="ressources/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
                                    <figcaption> 
                                      <div> <h2>Auberge La Cannebière</h2>
@@ -68,11 +68,10 @@
                                             <li class="etoile-gris"><i class="fas fa-star"></i></li>
                                         </ul>
                                 </figcaption>
-                        </figure>
+                        </figure></a>
                     </li>
-                    </a>
-                    <a id="card_marge" class="Hébergements_liste1_card" href="#">
-                        <li >
+
+                        <li class="Hébergements_liste1_card" id="card_marge"><a   href="#">
                             <figure class="figure1"><img src="ressources/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
                                 <figcaption>
                                     <div><h2>Hôtel du port</h2>
@@ -85,11 +84,10 @@
                                             <li><i class="fas fa-star"></i></li>
                                         </ul>
                                 </figcaption>
-                            </figure>
-                        </li>
-                    </a>
-                        <a class="Hébergements_liste1_card" href="#">
-                        <li >
+                            </figure></a>
+                    </li>
+                        
+                        <li class="Hébergements_liste1_card"><a  href="#">
                             <figure class="figure1"><img src="ressources/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
                                 <figcaption>
                                     <div><h2>Hôtel Les mouettes</h2>
@@ -102,11 +100,11 @@
                                             <li class="etoile-gris"><i class="fas fa-star"></i></li>
                                         </ul>
                                 </figcaption>
-                            </figure>
+                            </figure></a>
                         </li>
-                        </a>
-                        <a  class="Hébergements_liste1_card" href="#">
-                            <li >
+                        
+                        
+                            <li class="Hébergements_liste1_card"><a   href="#">
                                 <figure class="figure1"><img src="ressources/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
                                     <figcaption>
                                         <div><h2>Hôtel de la mer</h2>
@@ -119,11 +117,11 @@
                                                 <li class="etoile-gris"><i class="fas fa-star"></i></li>
                                             </ul>
                                     </figcaption>
-                                </figure>
+                                </figure></a>
                             </li>
-                        </a>
-                        <a class="Hébergements_liste1_card" href="#" >
-                            <li >
+                        
+                        
+                            <li class="Hébergements_liste1_card"><a  href="#" >
                                 <figure class="figure1"><img src="ressources/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
                                     <figcaption>
                                         <div><h2>Auberge Le Panier</h2>
@@ -136,11 +134,11 @@
                                                 <li class="etoile-gris"><i class="fas fa-star"></i></li>
                                             </ul>
                                     </figcaption>
-                                </figure>
+                                </figure></a>
                             </li>
-                        </a>
-                        <a class="Hébergements_liste1_card" href="#">
-                            <li >
+                        
+                        
+                            <li class="Hébergements_liste1_card"><a  href="#">
                                 <figure class="figure1"><img src="ressources/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
                                     <figcaption>
                                         <div><h2>Hôtel chez Amina</h2>
@@ -153,17 +151,17 @@
                                                 <li><i class="fas fa-star"></i></li>
                                             </ul>
                                     </figcaption>
-                                </figure>
+                                </figure></a>
                             </li>
-                        </a>
+                        
                         </ul>
                     <h2 class="Plus">Afficher Plus</h2>
                 </div>
                 <div class="Populaires">
                     <div class="Populaires_titre"><h1>Les plus populaires</h1><a href="#"><i class="fas fa-chart-line"></i></a></div>
                     <ul class="Populaires_liste">
-                        <a href="#">
-                            <li> 
+                        
+                            <li> <a href="#">
                             <figure class="figure2"><img src="ressources/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
                                        <figcaption> 
                                            <div><h2>Hôtel le Soleil du matin</h2>
@@ -176,11 +174,11 @@
                                                 <li><i class="fas fa-star"></i></li>
                                             </ul>
                                     </figcaption>
-                            </figure>
+                            </figure></a>
                         </li>
-                    </a>
-                    <a href="#">
-                    <li> 
+                    
+                    
+                    <li> <a href="#">
                         <figure class="figure2"><img src="ressources/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
                                    <figcaption> 
                                        <div><h2>Au coeur de l'eau Chambres d'hôtes</h2>
@@ -193,11 +191,11 @@
                                             <li class="etoile-gris"><i class="fas fa-star"></i></li>
                                         </ul>
                                 </figcaption>
-                        </figure>
+                        </figure></a>
                     </li>
-                </a>
-                <a href="#">
-                    <li> 
+                
+                
+                    <li> <a href="#">
                         <figure class="figure2"><img src="ressources/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
                                    <figcaption> 
                                        <div><h2>Hôtel Tout bleu et Blanc</h2>
@@ -210,16 +208,16 @@
                                             <li class="etoile-gris"><i class="fas fa-star"></i></li>
                                         </ul>
                                 </figcaption>
-                        </figure>
+                        </figure></a>
                     </li>
-                </a>
+                
                 </ul>
                 </div>
             
 
         </section>
 
-        <section >
+        <section class="block_activités" id="lien_activités" >
             <h1 class="titre_activités">Activités à Marseille</h1>
             <div class="Activités">
             <a class="trois" href="#"><figure id="gauche" class="figure3"><img src="ressources/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
