@@ -9,29 +9,17 @@
     src: url(ressources/texte/Raleway/static/Raleway-Bold.ttf);
 }
 
-
-
 body
 {
     font-family: Raleway;
 }
-
 header 
 {
     display: flex;
     justify-content: space-between;
     margin : 2%;
 }
-.navigation1:hover
-{
-    padding-top: 39%;
-    border-top: 2px solid rgb(0, 162, 255);
-}
-.navigation2:hover
-{
-    padding-top: 70%;
-    border-top: 2px solid rgb(0, 162, 255);
-}
+
 .logo
 {
     margin-left: 10%;
@@ -76,6 +64,7 @@ header nav ul li
  .barre_recherche{
     display: flex;
     width: 32%;
+    justify-self: baseline;
 }
 
 input
@@ -113,19 +102,21 @@ input
     border-left: none;
     text-align: center;
     width: 30%;
+    height: auto;
     color: ghostwhite;
     font-size: 1em;
     font-family: Raleway_bold;
 }
  #img_localisation
 {
-    border: 1px solid rgba(201, 199, 199, 0.363);
+    border: 2px solid rgba(201, 199, 199, 0.363);
     border-right: 0px;
     border-collapse: collapse;
     border-radius: 16px 0px 0px 16px;
     border-right: none;
     height: 50px;
     width : 50px;
+    color: black;
 }
 
 .filtres 
@@ -184,15 +175,15 @@ input
     display: flex;
     margin: 2% auto;
     margin-top:0px;
-    align-items: baseline;
+    align-items: center;
 }
 .logements i
 {
     margin-right: 10px;
-    font-size: 10px;
+    font-size: 0.7em;
     background-color: transparent;
     border: 1px solid #cfcfcf;
-    padding: 4px 8px 4px 8px;
+    padding: 4px 6px;
     border-radius: 50px;
     color: #0065FC;
     height: max-content;
@@ -228,7 +219,7 @@ input
     width: 58%;
     padding: 2% 0% 2% 2%;
     background-color: #F2F2F2;
-    border-radius: 4%;
+    border-radius: 20px;
     margin-left: 2%;
 }
 .figures
@@ -237,6 +228,7 @@ input
    list-style: none;
    flex-wrap: wrap;
    padding: 0%;
+   margin-bottom: 0px;
 }
 .Hébergements_liste1_card
 {
@@ -295,13 +287,13 @@ input
 
 .Plus 
 {
-    margin-bottom: 0%;
+    margin-top: 1%;
 }
 .Populaires
 {
     width: 28%;
     background-color: #F2F2F2;
-    border-radius: 4%;
+    border-radius: 20px;
     margin-right: 2%;
     padding: 2%;
 }
@@ -480,6 +472,18 @@ footer a
     text-decoration: none;
     color: black;
 }
+@media  screen and (min-width: 992px) {
+    .navigation1:hover
+    {
+        padding-top: 33%;
+        border-top: 2px solid rgb(0, 162, 255);
+    }
+    .navigation2:hover
+    {
+        padding-top: 57%;
+        border-top: 2px solid rgb(0, 162, 255);
+    }
+}
 
 @media screen and (min-width: 992px) and (max-width:1100px)
 {
@@ -639,7 +643,7 @@ footer a
     }
     .figure2
     {
-        height: 100px;
+        height: 110px;
     }
     .figure2 p
     {
@@ -939,8 +943,7 @@ footer a
     }
 }
 
-
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 767px) 
 {
     *{
         margin: 0px;
@@ -991,7 +994,7 @@ footer a
     }
     .p 
     {
-        padding: 3% 0% 6% 0%;
+        padding: 3% 0%;
     }
     .bouton
     {
@@ -999,29 +1002,30 @@ footer a
     }
     .search
     {
-        width: 85%;
-        font-size: 1.2em;
         padding-right: 15px;
+        border: 0px;
+        padding-left: 5%;
     }
     #img_localisation
     {
         object-fit: cover;
         height: 45px;
+        border: 0px;
     }
     .loupe
     {
         display: block;
         border: 0px ;
+        color: white;
         background-color: #0065FC;
         border-radius: 13px;
         width: 55px;
-        margin-left: -2%;
     }
     .barre_recherche 
     {
         width: 100%;
-        padding-top: 6%;
-        padding-bottom: 6%
+        border: 1px solid rgba(201, 199, 199, 0.363);
+        margin: 10% 0% 10% 0%;
     }
     .filtres
     {
@@ -1038,12 +1042,15 @@ footer a
         flex-wrap: wrap;
         justify-content: space-between;
         width: 100%;
-        font-size: 1em;
         padding-top: 5%;
     }
     .filtres_a 
     {
         margin-right: 2%;
+    }
+    .texte 
+    {
+        padding-right: 20px;
     }
     .filtres i 
     {
@@ -1056,7 +1063,12 @@ footer a
     }
     .logements 
     {
+        align-items: baseline;
         padding: 5% 0px;
+    }
+    .logements i 
+    {
+        padding: 5px 9px;
     }
     .Principal
     {
@@ -1072,7 +1084,6 @@ footer a
     .Principal h2
     {
         margin-top: 2%;
-        font-size: 1.3em;
     }
 
     .Hébergements
@@ -1099,7 +1110,7 @@ footer a
     }
     .figure1 p 
     {
-        margin: 3% 0%;
+        margin: 2% 0%;
     }   
     
     .Principal .Plus
@@ -1113,7 +1124,7 @@ footer a
         width: auto;
         margin: 0px;
     }
-    .Populaires .figure2
+    .figure2
     {
         width: auto;
         margin: 0px 0px 3% 0px;
@@ -1183,9 +1194,32 @@ footer a
 
 @media screen and (max-width: 374px)
 {
-    .search
+    .logo
+    {
+        height: 50px;
+    }
+    header 
     {
         font-size: 0.8em;
+    }
+    .barre_recherche
+    {
+        border-radius: 42px 60px 60px 42px;
+    }
+    .search
+    {
+        font-size: 1.2em;
+        width: 75%;
+    }
+    .loupe {
+        width: 55px;
+        border-radius: 15px;
+        font-size: 0.8em;
+    }
+    #img_localisation {
+        height: 50px;
+        width: 50px;
+        border-radius: 15px 0px 0px 15px;
     }
     .p 
     {
@@ -1201,12 +1235,13 @@ footer a
     }
     .filtres_liste
     {
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
     #Familial
     {
         padding-left: 17px;
         padding-right:17px;
+        
     }
     .filtres i 
     {
@@ -1220,13 +1255,13 @@ footer a
     {
         padding: 5px 7px;
     }
-    .Principal h1, .Populaires_titre i 
+    .Principal h1, .Populaires_titre i, .titre_activités
     {
-        font-size: 0.9em;
+        font-size: 1em;
     }
     .Principal h2 
     {
-        font-size: 01em;
+        font-size: 0.9em;
     }
     .Principal p 
     {
@@ -1259,17 +1294,52 @@ footer a
 }
 @media screen and (min-width: 375px) and (max-width: 425px)
 {
-    .filtres h2
+    .logo
+    {
+        height: 60px;
+    }
+    header 
+    {
+        font-size: 1em;
+    }
+    .p 
     {
         font-size: 1.1em;
     }
-    .Princpal h1, .Populaires_titre i  
+    .barre_recherche
+    {
+        border-radius: 42px 60px 60px 42px;
+    }
+    .search
+    {
+        font-size: 1em;
+        width: 75%;
+    }
+    .loupe {
+        width: 55px;
+        border-radius: 15px;
+        font-size: 0.9em;
+    }
+    #img_localisation {
+        height: 50px;
+        width: 50px;
+        border-radius: 15px 0px 0px 15px;
+    }
+    .filtres_liste
+    {
+        font-size: 0.9em;
+    }
+    .filtres h2
+    {
+        font-size: 1.2em;
+    }
+    .Princpal h1, .Populaires_titre i , .titre_activités
     {
         font-size: 1.1em;
     }
     .Principal h2
     {
-        font-size: 1.1em;
+        font-size: 1.2em;
         margin-top: 2%;
     }
     .Principal p 
@@ -1280,17 +1350,13 @@ footer a
     {
         height: 200px;
     }
-    .figure1 p 
-    {
-        margin: 2% 0px;
-    }
     .figure2 
     {
         height: 150px;
     }
     .étoiles2 li i 
     {
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
     .Activités
     {
@@ -1303,8 +1369,39 @@ footer a
     }
     
 }
-@media screen and (min-width: 425px) and (max-width: 768px)
+@media screen and (min-width: 425px) and (max-width: 767px)
 {
+    .logo
+    {
+        height: 70px;
+    }
+    header 
+    {
+        font-size: 1.2em;
+    }
+    .p 
+    {
+        font-size: 1.2em;
+    }
+    .barre_recherche
+    {
+        border-radius: 42px 60px 60px 42px;
+    }
+    .search
+    {
+        font-size: 1.3em;
+        width: 80%;
+    }
+    .loupe {
+        width: 65px;
+        border-radius: 20px;
+        font-size: 1em;
+    }
+    #img_localisation {
+        height: 60px;
+        width: 60px;
+        border-radius: 20px 0px 0px 20px;
+    }
     #Familial
     {
         padding-left: 24px;
@@ -1316,25 +1413,532 @@ footer a
     }
     .rechercher h1 
     {
-        font-size: 1.8em;
+        font-size: 1.7em;
+    }
+    .filtres h2
+    {
+        font-size: 1.4em;
     }
     .filtres .filtres_liste
     {
-        font-size: 1.2em;
+        font-size: 1.1em;
+    }
+    
+    .logements 
+    {
+        font-size: 1em;
+    }
+    .logements i 
+    {
+        padding: 5px 8px;
+        font-size: 0.7em;
+    }
+    .Principal h1, .Populaires_titre i, .titre_activités
+    {
+        font-size: 1.4em;
+    }
+    .Principal h2 
+    {
+        font-size: 1.3em;
+    }
+    .Principal p 
+    {
+        font-size: 1.1em;
+    }
+    .figure1
+    {
+        height: 230px;
+    }
+    .figure2 
+    {
+        height: 180px;
+    }
+    .étoiles2 li i 
+    {
+        font-size: 0.8em;
+    }
+    .Activités
+    {
+        font-size: 0.8em;
+    }
+    .figure3, .figure4, .figure5, .figure6, .figure7, .figure8
+    {
+        height: 210px;
     }
 }
-@media screen and (min-width: 601px) and (max-width: 768px)
+@media screen and (min-width: 501px) and (max-width: 592px)
 {
-    .figure1 
+    .logo
     {
-        height: 350px;
+        height: 80px;
+    }
+    header 
+    {
+        font-size: 1.6em;
+    }
+    .p 
+    {
+        font-size: 1.5em;
+    }
+    .barre_recherche
+    {
+        border-radius: 75px 100px 100px 75px;
+    }
+    .search
+    {
+        font-size: 1.7em;
+        width: 75%;
+    }
+    .loupe {
+        width: 70px;
+        border-radius: 20px;
+        font-size: 1.5em;
+    }
+    #img_localisation {
+        height: 70px;
+        width: 70px;
+        border-radius: 20px 0px 0px 20px;
+    }
+    #Familial
+    {
+        padding-left: 26px;
+        padding-right:26px;
+    }
+    .filtres i 
+    {
+        padding: 24px;
+    }
+    .filtres h2
+    {
+        font-size: 1.6em;
+    }
+    .rechercher h1 
+    {
+        font-size: 2.1em;
+    }
+    .filtres .filtres_liste
+    {
+        font-size: 1.4em;
+    }
+    
+    .logements
+    {
+        font-size: 1.2em;
+    }
+    .logements i 
+    {
+        padding: 5px 10px;
+        font-size: 0.8em;
+    }
+    .Principal h1, .Populaires_titre i, .titre_activités
+    {
+        font-size: 1.6em;
+    }
+    .Principal h2 
+    {
+        font-size: 1.5em;
+    }
+    .Principal p 
+    {
+        font-size: 1.2em;
+    }
+    .figure1
+    {
+        height: 270px;
+    }
+    .figure2 
+    {
+        height: 200px;
+    }
+    .étoiles2 li i 
+    {
+        font-size: 1em;
+    }
+    .Activités
+    {
+        font-size: 0.9em;
     }
     .figure3, .figure4, .figure5, .figure6, .figure7, .figure8
     {
         height: 230px;
     }
 }
-@media screen and (min-width: 769px) and (max-width: 992px)
+@media screen and (min-width: 592px) and (max-width: 767px)
 {
-    *{ margin: 0px;}
+    .logo
+    {
+        height: 90px;
+    }
+    header 
+    {
+        font-size: 1.8em;
+    }
+    .barre_recherche
+    {
+        border-radius: 32px 60px 60px 32px;
+    }
+    .search
+    {
+        font-size: 2em;
+        width: 70%;
+    }
+    .loupe {
+        width: 110px;
+        border-radius: 30px;
+        font-size: 2em;
+    }
+    #img_localisation {
+        height: 110px;
+        width: 110px;
+        border-radius: 30px 0px 0px 30px;
+    }
+    .p 
+    {
+        font-size: 1.8em;
+    }
+    #Familial
+    {
+        padding-left: 28px;
+        padding-right:28px;
+    }
+    .filtres i 
+    {
+        padding: 24px;
+    }
+    .filtres h2
+    {
+        font-size: 2.4em;
+    }
+    .rechercher h1 
+    {
+        font-size: 2.5em;
+    }
+    .filtres .filtres_liste
+    {
+        font-size: 1.8em;
+    }
+    .logements
+    {
+        font-size: 1.3em;
+    }
+    .logements i 
+    {
+        padding: 5px 12px;
+        font-size: 0.9em;
+    }
+    .Principal h1, .Populaires_titre i, .titre_activités
+    {
+        font-size: 2em;
+    }
+    .Principal h2 
+    {
+        font-size: 1.8em;
+    }
+    .Principal p 
+    {
+        font-size: 1.3em;
+    }
+    .figure1
+    {
+        height: 300px;
+    }
+    .figure2 
+    {
+        height: 220px;
+    }
+    .étoiles2 li i 
+    {
+        font-size: 1.1em;
+    }
+    .Activités
+    {
+        font-size: 1em;
+    }
+    .figure3, .figure4, .figure5, .figure6, .figure7, .figure8
+    {
+        height: 260px;
+    }
+}
+@media screen and (min-width: 701px) and (max-width: 767px)
+{
+    .logo 
+    {
+        height: 100px;
+    }
+    header
+    {
+        font-size: 2em;
+    }
+    .p 
+    {
+        font-size: 2em;
+    }
+    .barre_recherche
+    {
+        border-radius: 32px 60px 60px 32px;
+    }
+    .search
+    {
+        font-size: 2em;
+        width: 70%;
+    }
+    .loupe {
+        width: 110px;
+        border-radius: 30px;
+        font-size: 2.5em;
+    }
+    #img_localisation {
+        height: 110px;
+        width: 110px;
+        border-radius: 30px 0px 0px 30px;
+    }
+    
+    .filtres h2
+    {
+        font-size: 2.5em;
+    }
+    .rechercher h1 
+    {
+        font-size: 2.9em;
+    }
+    .filtres .filtres_liste
+    {
+        font-size: 2.2em;
+    }
+    
+    .logements
+    {
+        font-size: 1.6em;
+    }
+    .logements i 
+    {
+        padding: 5px 13px;
+        font-size: 1em;
+    }
+    .Principal h1, .Populaires_titre i 
+    {
+        font-size: 2.4em;
+    }
+    .Principal h2 
+    {
+        font-size: 2em;
+    }
+    .Principal p 
+    {
+        font-size: 1.4em;
+    }
+    .figure1
+    {
+        height: 350px;
+    }
+    .figure2 
+    {
+        height: 280px;
+    }
+    .étoiles2 li i 
+    {
+        font-size: 1.2em;
+    }
+    .Activités
+    {
+        font-size: 1.1em;
+    }
+    .figure3, .figure4, .figure5, .figure6, .figure7, .figure8
+    {
+        height: 280px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px)
+{
+    *{ 
+        margin: 0px;
+    }
+    header 
+    {
+        align-items: center;
+    }
+    .logo
+    {
+        height: 50px;
+    }
+    .rechercher h1 
+    {
+        font-size: 1em;
+    }
+    .p 
+    {
+        font-size: 0.7em;
+    }
+    form 
+    {
+        padding: 30px 0px;
+    }
+    .barre_recherche
+    {
+        width: 60%;
+    }
+    .search 
+    {
+        font-size: 1.2em;
+    }
+    header nav ul li a:hover
+    {
+        color: blue;
+    }
+    .filtres
+    {
+        width: 90%;
+    }
+    .filtres_a
+    {
+        width: max-content;
+        font-size: 0.7em;
+    }
+    .filtres_liste
+    {
+        width: 100%;
+    }
+    .filtres h2
+    {
+        font-size: 1em;
+        
+    }
+    .logements
+    {
+        font-size: 0.6em;
+    }
+    .Principal
+    {
+        width: auto;
+        flex-direction: column-reverse;
+        height: 700px;
+        padding: 2%;
+    }
+    .Populaires, .Hébergements
+    {
+        width: auto;
+        margin: 0px;
+        border-radius: 20px;
+    }
+    .Populaires_titre i 
+    {
+        font-size: 1.3em;
+    }
+    .Populaires_liste
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .Populaires_liste li 
+    {
+        width: 31%;
+    }
+    .Principal h2 
+    {
+        font-size: 0.7em;
+    }
+    .Principal p 
+    {
+        font-size: 0.6em;
+        margin: 2% 0%;
+    }
+    .étoiles2
+    {
+        width: min-content;
+        font-size: 0.5em;
+    }
+    .figure2 
+    {
+        height: 100px;
+    }
+    .figure2 figcaption 
+    {
+        padding-right: 15px;
+    }
+    .figure1 
+    {
+        height: 150px;
+    }
+    .Hébergements .Plus
+    {
+        margin-top: 0px;
+    }
+    .Activités
+    {
+        height: auto;
+        justify-content: space-between;
+        font-size: 0.7em;
+        flex-wrap: wrap;
+    }
+    .Activités :nth-child(1)
+    {
+        order: 2;
+    }
+    .Activités :nth-child(2)
+    {
+        order: 1;
+    }
+    .Activités :nth-child(3)
+    {
+        order: 3;
+    }
+    .Activités :nth-child(4)
+    {
+        order: 3;
+    }
+    .trois, .liste3, .six
+    {
+        width: 47%;
+        height: 400px;
+        margin-bottom: 40px;
+    }
+    .figure3, .figure6 
+    {
+        height: 100%;
+    }
+    .figure4, .figure5, .figure7, .figure8
+    {
+        height: 180px ;
+    }
+    .Activités figcaption 
+    {
+        padding: 15px;
+    }
+    .étoiles2
+    {
+        margin-top: 2%;
+    }
+}
+@media screen and (min-width: 868px) and (max-width: 991px)
+{
+    .Principal
+    {
+        height: 800px;
+    }
+    .Principal h2 
+    {
+        font-size: 0.8em;
+    }
+    .Principal p 
+    {
+        font-size: 0.7em;
+    }
+    .étoiles2
+    {
+        font-size: 0.6em;
+    }
+    .figure2 
+    {
+        height: 130px;
+    }
+
+    .figure1 
+    {
+        height: 180px;
+    }
+    .Activités
+    {
+        font-size: 0.8em;
+    }
 }
