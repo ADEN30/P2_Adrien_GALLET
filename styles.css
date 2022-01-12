@@ -34,6 +34,7 @@ header nav ul li
 {
     list-style:none;
     padding-left: 100px;
+    color: black;
     
 }
 .navigation1 , .navigation2
@@ -53,7 +54,7 @@ header nav ul li
  h1
 {
     font-family: Raleway_bold;
-    margin-bottom: none;
+    margin-bottom: 0px;
 }
 .recherche h2
 {
@@ -285,9 +286,9 @@ input
 }
 
 
-.Plus 
+.Principal .Plus 
 {
-    margin-top: 1%;
+    margin-top: 2%;
 }
 .Populaires
 {
@@ -301,7 +302,6 @@ input
 {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
     padding-right: 2%;
 }
 .Populaires_titre i 
@@ -472,6 +472,7 @@ footer a
     text-decoration: none;
     color: black;
 }
+/*Ordinateur*/
 @media  screen and (min-width: 992px) {
     .navigation1:hover
     {
@@ -483,9 +484,375 @@ footer a
         padding-top: 57%;
         border-top: 2px solid rgb(0, 162, 255);
     }
+    .Populaires_titre
+    {
+        align-items: baseline;
+    }
 }
-
-@media screen and (min-width: 992px) and (max-width:1100px)
+@media screen and (max-width: 1440px)
+{
+    .search
+    {
+        font-size: 1.2em;
+    }
+    .navigation1:hover
+    {
+        padding-top: 39%;
+        border-top: 2px solid rgb(0, 162, 255);
+    }
+    .navigation2:hover
+    {
+        padding-top: 70%;
+        border-top: 2px solid rgb(0, 162, 255);
+    }
+    header 
+    {
+        font-size: 0.9em;
+    }
+    .logo
+    {
+        height: 44px;
+    }
+    h1 
+    {
+        font-size: 1.2em;
+    }
+    .p
+    {
+        font-size: 0.9em;
+    }
+    .filtres
+    {
+        font-size: 0.9em;
+    }
+    .logements
+    {
+        font-size: 0.8em;
+    }
+    .Principal h1 
+    {
+        font-size: 1.5em;
+    }
+    .Populaires_titre i
+    {
+        font-size: 1.2em;
+    }
+    .Principal h2
+    {
+        font-size:1em;
+        margin-bottom: 0;
+    }
+    .figure1 p
+    {
+        margin: 4% 0%;
+        font-size: 0.8em;
+    }
+    .figure2 p 
+    {
+        font-size: 0.8em;
+    }
+    .Populaires
+    {
+        width: 27%;
+    }
+    .Hébergements
+    {
+        width: 59%;
+    }
+    .figure1
+    {
+        height:200px;
+    }
+    .figure2
+    {
+        height: 140px;
+    }
+    .étoiles2 
+    {
+        font-size: 0.6em;
+    }
+    .Activités
+    {
+        font-size: 0.8em;
+    }
+    .Activités h2
+    {
+        padding-left: 16px;
+    }
+    .Activités figcaption
+    {
+        padding: 16px 0px;
+    }
+    #img_localisation
+    {
+        height: 48px;
+    }
+    .figure3
+    {
+        height: 450px;
+    }
+    .figure4
+    {
+        height: 230px;
+    }
+    .figure5 
+    {
+        height: 170px;
+    }
+    .figure6
+    {
+        height: 450px;
+    }
+    .figure7
+    {
+        height: 190px;
+    }
+    .figure8
+    {
+        height: 210px;
+    }
+    .H1
+    {
+        font-size: 0.9em;
+    }
+    footer a
+    {
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 1300px)
+{
+    .test:hover
+    {
+        padding-top: 40px;
+    }
+    header 
+    {
+        font-size: 0.9em;
+    }
+    .logo
+    {
+        height: 44px;
+    }
+    h1 
+    {
+        font-size: 1.2em;
+    }
+    .p
+    {
+        font-size: 0.8em;
+    }
+    .search
+    {
+        font-size: 1.1em;
+    }.filtres
+    {
+        font-size: 0.8em;
+    }
+    .logements
+    {
+        font-size: 0.7em;
+    }
+    .Principal h1
+    {
+        font-size: 1.4em;
+    }
+    .Populaires_titre i
+    {
+        font-size: 1.1em;
+    }
+    .Principal h2
+    {
+        font-size:0.9em;
+        margin-bottom: 0;
+    }
+    .figure1 
+    {
+        height: 160px;
+    }
+    .figure1 p 
+    {
+        margin: 4% auto;
+        font-size: 0.7em;
+    }
+    .figure2
+    {
+        height: 120px;
+    }
+    .figure2 p
+    {
+        font-size: 0.7em;
+    }
+    .étoiles2  
+    {
+        font-size: 0.5em;
+    }
+    .Activités
+    {
+        font-size: 0.6em;
+    }
+    .Activités h2
+    {
+        padding-left: 16px;
+    }
+    .Activités figcaption
+    {
+        padding: 16px 0px;
+    }
+    #img_localisation
+    {
+        height: 48px;
+    }
+    .figure3
+    {
+        height: 400px;
+    }
+    .figure4
+    {
+        height: 210px;
+    }
+    .figure5 
+    {
+        height: 150px;
+    }
+    .figure6
+    {
+        height: 400px;
+    }
+    .figure7    
+    {
+        height: 175px;
+    }
+    .figure8
+    {
+        height: 185px;
+    }
+    .H1
+    {
+        font-size: 0.8em;
+    }
+    footer a
+    {
+        font-size: 0.7em;
+    }
+}
+@media screen and (max-width: 1200px)
+{
+    .test:hover
+    {
+        padding-top: 40px;
+    }
+    header
+    {
+        font-size: 0.9em;
+    }
+    .logo
+    {
+        height: 44px;
+    }
+    h1 
+    {
+        font-size: 1.2em;
+    }
+    .p
+    {
+        font-size: 0.7em;
+    }
+    .search
+    {
+        font-size: 1.1em;
+    }.filtres
+    {
+        font-size: 0.7em;
+    }
+    .logements
+    {
+        font-size: 0.6em;
+    }
+    .Principal h1
+    {
+        font-size: 1.1em;
+    }
+    .Populaires_titre i
+    {
+        font-size: 1em;
+    }
+    .Principal h2
+    {
+        font-size:0.8em;
+        margin-bottom: 0;
+    }
+    .figure1 
+    {
+        height: 150px;
+    }
+    .figure1 p 
+    {
+        margin: 4% auto;
+        font-size: 0.6em;
+    }
+    .figure2
+    {
+        height: 110px;
+    }
+    .figure2 p
+    {
+        font-size: 0.7em;
+    }
+    .étoiles2 
+    {
+        font-size: 0.4em;
+    }
+    .Activités
+    {
+        font-size: 0.5em;
+    }
+    .Activités h2
+    {
+        padding-left: 16px;
+    }
+    .Activités figcaption
+    {
+        padding: 13px 0px;
+    }
+    #img_localisation
+    {
+        height: 48px;
+    }
+    .figure3
+    {
+        height: 340px;
+    }
+    .figure4
+    {
+        height: 180px;
+    }
+    .figure5 
+    {
+        height: 125px;
+    }
+    .figure6
+    {
+        height: 340px;
+    }
+    .figure7
+    {
+        height: 145px;
+    }
+    .figure8
+    {
+        height: 157px;
+    }
+    .H1
+    {
+        font-size: 0.7em;
+    }
+    footer a
+    {
+        font-size: 0.6em;
+    }
+}
+@media screen and (max-width: 1100px)
 {
     input   {  height: 40px;}
     .search     { font-size: 0.8em; }
@@ -502,8 +869,14 @@ footer a
     }
     .filtres    { font-size: 0.6em;}
     .logements  { font-size: 0.6em;}
-    .Principal h1, .Principal a    { font-size: 1em; }
-
+    .Principal h1  
+    { 
+        font-size: 1em; 
+    }
+    .Populaires_titre i
+    {
+        font-size: 0.9em;
+    }
     .Principal h2
     {
         font-size:0.8em;
@@ -512,7 +885,7 @@ footer a
     }
     .figure1 p
     {
-        margin: 0% auto;
+        margin: 4% auto;
         font-size: 0.6em;
     }
     .figure2 p  { font-size: 0.6em;}
@@ -523,13 +896,13 @@ footer a
       
     .Populaires img {  width: 40%; }
     
-    .étoiles2 li i  {font-size: 0.4em;}
+    .étoiles2 {font-size: 0.4em;}
 
     .test :hover
     {
         padding-top: 18px;
     }
-    header nav ul li 
+    header
     {
         font-size: 0.7em;
     }
@@ -590,1164 +963,8 @@ footer a
         font-size: 0.6em;
     }
 }
-@media screen and (min-width: 1101px) and (max-width: 1200px)
-{
-    .test:hover
-    {
-        padding-top: 40px;
-    }
-    header nav ul li 
-    {
-        font-size: 0.9em;
-    }
-    .logo
-    {
-        height: 44px;
-    }
-    h1 
-    {
-        font-size: 1.2em;
-    }
-    .p
-    {
-        font-size: 0.7em;
-    }
-    .search
-    {
-        font-size: 1.1em;
-    }.filtres
-    {
-        font-size: 0.7em;
-    }
-    .logements
-    {
-        font-size: 0.6em;
-    }
-    .Principal h1, .Principal a
-    {
-        font-size: 1.1em;
-    }
-    .Principal h2
-    {
-        font-size:0.8em;
-        margin-bottom: 0;
-    }
-    .figure1 
-    {
-        height: 150px;
-    }
-    .figure1 p 
-    {
-        margin: 0% auto;
-        font-size: 0.6em;
-    }
-    .figure2
-    {
-        height: 110px;
-    }
-    .figure2 p
-    {
-        font-size: 0.7em;
-    }
-    .étoiles2 li i 
-    {
-        font-size: 0.4em;
-    }
-    .Activités
-    {
-        font-size: 0.5em;
-    }
-    .Activités h2
-    {
-        padding-left: 16px;
-    }
-    .Activités figcaption
-    {
-        padding: 13px 0px;
-    }
-    #img_localisation
-    {
-        height: 48px;
-    }
-    .figure3
-    {
-        height: 340px;
-    }
-    .figure4
-    {
-        height: 180px;
-    }
-    .figure5 
-    {
-        height: 125px;
-    }
-    .figure6
-    {
-        height: 340px;
-    }
-    .figure7
-    {
-        height: 145px;
-    }
-    .figure8
-    {
-        height: 157px;
-    }
-    .H1
-    {
-        font-size: 0.7em;
-    }
-    footer a
-    {
-        font-size: 0.6em;
-    }
-}
-@media screen and (min-width: 1201px) and (max-width: 1300px)
-{
-    .test:hover
-    {
-        padding-top: 40px;
-    }
-    header nav ul li 
-    {
-        font-size: 0.9em;
-    }
-    .logo
-    {
-        height: 44px;
-    }
-    h1 
-    {
-        font-size: 1.2em;
-    }
-    .p
-    {
-        font-size: 0.8em;
-    }
-    .search
-    {
-        font-size: 1.1em;
-    }.filtres
-    {
-        font-size: 0.8em;
-    }
-    .logements
-    {
-        font-size: 0.7em;
-    }
-    .Principal h1, .Principal .Populaires_titre a
-    {
-        font-size: 1.4em;
-    }
-    .Principal h2
-    {
-        font-size:0.9em;
-        margin-bottom: 0;
-    }
-    .figure1 
-    {
-        height: 160px;
-    }
-    .figure1 p 
-    {
-        margin: 0% auto;
-        font-size: 0.7em;
-    }
-    .figure2
-    {
-        height: 120px;
-    }
-    .figure2 p
-    {
-        font-size: 0.7em;
-    }
-    .étoiles2 li i 
-    {
-        font-size: 0.5em;
-    }
-    .Activités
-    {
-        font-size: 0.6em;
-    }
-    .Activités h2
-    {
-        padding-left: 16px;
-    }
-    .Activités figcaption
-    {
-        padding: 16px 0px;
-    }
-    #img_localisation
-    {
-        height: 48px;
-    }
-    .figure3
-    {
-        height: 400px;
-    }
-    .figure4
-    {
-        height: 210px;
-    }
-    .figure5 
-    {
-        height: 150px;
-    }
-    .figure6
-    {
-        height: 400px;
-    }
-    .figure7    
-    {
-        height: 175px;
-    }
-    .figure8
-    {
-        height: 185px;
-    }
-    .H1
-    {
-        font-size: 0.8em;
-    }
-    footer a
-    {
-        font-size: 0.7em;
-    }
-}
-@media screen and (min-width: 1301px) and (max-width: 1440px)
-{
-    .search
-    {
-        font-size: 1.2em;
-    }
-    .navigation1:hover
-    {
-        padding-top: 39%;
-        border-top: 2px solid rgb(0, 162, 255);
-    }
-    .navigation2:hover
-    {
-        padding-top: 70%;
-        border-top: 2px solid rgb(0, 162, 255);
-    }
-    header ul li
-    {
-        font-size: 0.9em;
-    }
-    .logo
-    {
-        height: 44px;
-    }
-    h1 
-    {
-        font-size: 1.2em;
-    }
-    .p
-    {
-        font-size: 0.9em;
-    }
-    .filtres
-    {
-        font-size: 0.9em;
-    }
-    .logements
-    {
-        font-size: 0.8em;
-    }
-    .Principal h1, .Principal .Populaires_titre a
-    {
-        font-size: 1.5em;
-    }
-    .Principal h2
-    {
-        font-size:1em;
-        margin-bottom: 0;
-    }
-    .figure1 p
-    {
-        margin-top: 2%;
-        font-size: 0.8em;
-        margin-bottom: 2%;
-    }
-    .figure2 p 
-    {
-        font-size: 0.8em;
-    }
-    .Populaires
-    {
-        width: 27%;
-    }
-    .Hébergements
-    {
-        width: 59%;
-    }
-    .figure1
-    {
-        height:200px;
-    }
-    .figure2
-    {
-        height: 140px;
-    }
-    .étoiles2 li i 
-    {
-        font-size: 0.6em;
-    }
-    .Activités
-    {
-        font-size: 0.8em;
-    }
-    .Activités h2
-    {
-        padding-left: 16px;
-    }
-    .Activités figcaption
-    {
-        padding: 16px 0px;
-    }
-    #img_localisation
-    {
-        height: 48px;
-    }
-    .figure3
-    {
-        height: 450px;
-    }
-    .figure4
-    {
-        height: 230px;
-    }
-    .figure5 
-    {
-        height: 170px;
-    }
-    .figure6
-    {
-        height: 450px;
-    }
-    .figure7
-    {
-        height: 190px;
-    }
-    .figure8
-    {
-        height: 210px;
-    }
-    .H1
-    {
-        font-size: 0.9em;
-    }
-    footer a
-    {
-        font-size: 0.8em;
-    }
-}
 
-@media screen and (max-width: 767px) 
-{
-    *{
-        margin: 0px;
-    }
-    
-    header
-    {
-        display: block;
-        margin: 0px;
-    }
-    .block_image
-    {
-        text-align: center;
-    }
-    .logo 
-    {
-        height: 50px;
-        padding: 20px;
-    }
-    header nav  ul 
-    {
-        padding: 0px;
-    }
-     header nav ul li 
-    {
-        border-bottom: 2px solid;
-        padding-bottom: 10px;
-        text-align: center;
-        width: 50%;
-        padding-left: 0%;
-    }
-    header nav ul li:hover
-    {
-        border-bottom: 2px solid blue;
-    }
-    .navigation1:hover , .navigation2:hover
-    {
-        color: blue;
-    }
-    .rechercher 
-    {
-        padding: 0px 5%;
-        margin: 0px;
-    }
-    .rechercher h1 
-    {
-        padding-top: 10%;
-    }
-    .p 
-    {
-        padding: 3% 0%;
-    }
-    .bouton
-    {
-        display: none;
-    }
-    .search
-    {
-        padding-right: 15px;
-        border: 0px;
-        padding-left: 5%;
-    }
-    #img_localisation
-    {
-        object-fit: cover;
-        height: 45px;
-        border: 0px;
-    }
-    .loupe
-    {
-        display: block;
-        border: 0px ;
-        color: white;
-        background-color: #0065FC;
-        border-radius: 13px;
-        width: 55px;
-    }
-    .barre_recherche 
-    {
-        width: 100%;
-        border: 1px solid rgba(201, 199, 199, 0.363);
-        margin: 10% 0% 10% 0%;
-    }
-    .filtres
-    {
-        display: block;
-        width: 100%;
-    }
-    .filtres h2
-    {
-        width: auto;
-    }
-    .filtres_liste 
-    {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 100%;
-        padding-top: 5%;
-    }
-    .filtres_a 
-    {
-        margin-right: 2%;
-    }
-    .texte 
-    {
-        padding-right: 20px;
-    }
-    .filtres i 
-    {
-        padding: 18px;
-    }
-    #Familial
-    {
-        padding-left: 20px;
-        padding-right:20px;
-    }
-    .logements 
-    {
-        align-items: baseline;
-        padding: 5% 0px;
-    }
-    .logements i 
-    {
-        padding: 5px 9px;
-    }
-    .Principal
-    {
-        flex-direction: column-reverse;
-        width: auto;
-        padding: 0px;
-    }
-    .Principal h1 
-    {
-        padding: 5% 0px;
-        font-size: 1.3em;
-    }
-    .Principal h2
-    {
-        margin-top: 2%;
-    }
-
-    .Hébergements
-    {
-        width: 90%;
-        margin: 0px;
-        border-radius: 0;
-        background-color: white;
-        padding: 5%;
-    }
-
-    .figures 
-    {
-        flex-direction: column;
-    }
-    .Hébergements_liste1_card {
-        margin-right: 0%;
-        width: auto;
-    }
-    .figure1 
-    {
-        box-shadow: 0px 0px 10px #0000002b;
-        height: 250px;
-    }
-    .figure1 p 
-    {
-        margin: 2% 0%;
-    }   
-    
-    .Principal .Plus
-    {
-        padding: 3% 0px;
-    }
-    .Populaires
-    {
-        padding: 5%;
-        border-radius: 0px;
-        width: auto;
-        margin: 0px;
-    }
-    .figure2
-    {
-        width: auto;
-        margin: 0px 0px 3% 0px;
-        height: 160px;
-    } 
-    .figure2 figcaption
-    {
-        padding: 2% 0% 2% 5%;
-    }
-    .figure2 p 
-    {
-        margin-top: 6%;
-    }
-    .block_activités
-    {
-        padding: 0px 5%;
-        
-    }
-    .Activités
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-family: Raleway_bold;
-        margin: 0px;
-    }
-    .titre_activités
-    {
-        margin: 8% 0px;
-    }
-    .Activités img 
-    {
-        width: auto;
-        object-position: center;
-    }
-    .Activités figcaption
-    {
-        border-radius: 0px 0px 18px 18px;
-        padding: 0px;
-    }
-    .Activités h2
-    {
-        padding: 19px 0px 19px 19px ;
-    }
-    .trois, .liste3, .six
-    {
-        width: 100%;
-    }
-    .figure3, .figure4, .figure5, .figure6, .figure7, .figure8
-    {
-        width: auto;
-        margin-bottom: 10%;
-        height: 200px; 
-        box-shadow: 0px 0px 10px #0000002b;
-    }
-
-    footer
-    {
-        display: flex;
-        flex-direction: column;
-        width: auto;
-        margin-top: 5%;
-        padding:8% 5% 1% 5%;
-    }
-    
-}
-
-@media screen and (max-width: 374px)
-{
-    .logo
-    {
-        height: 50px;
-    }
-    header 
-    {
-        font-size: 0.8em;
-    }
-    .barre_recherche
-    {
-        border-radius: 42px 60px 60px 42px;
-    }
-    .search
-    {
-        font-size: 1.2em;
-        width: 75%;
-    }
-    .loupe {
-        width: 55px;
-        border-radius: 15px;
-        font-size: 0.8em;
-    }
-    #img_localisation {
-        height: 50px;
-        width: 50px;
-        border-radius: 15px 0px 0px 15px;
-    }
-    .p 
-    {
-        font-size: 0.9em;
-    }
-    .filtres h2
-    {
-        font-size: 0.9em;
-    }
-    .rechercher h1 
-    {
-        font-size: 1.3em;
-    }
-    .filtres_liste
-    {
-        font-size: 0.8em;
-    }
-    #Familial
-    {
-        padding-left: 17px;
-        padding-right:17px;
-        
-    }
-    .filtres i 
-    {
-        padding: 14px;
-    }
-    .logements, .logements i 
-    {
-        font-size: 0.6em;
-    }
-    .logements i 
-    {
-        padding: 5px 7px;
-    }
-    .Principal h1, .Populaires_titre i, .titre_activités
-    {
-        font-size: 1em;
-    }
-    .Principal h2 
-    {
-        font-size: 0.9em;
-    }
-    .Principal p 
-    {
-        font-size: 0.7em;
-    }
-    .figure1
-    {
-        height: 150px;
-    }
-    .figure1 p 
-    {
-        margin: 1% 0px;
-    }
-    .figure2 
-    {
-        height: 130px;
-    }
-    .étoiles2 li i 
-    {
-        font-size: 0.6em;
-    }
-    .Activités
-    {
-        font-size: 0.6em;
-    }
-    .figure3, .figure4, .figure5, .figure6, .figure7, .figure8
-    {
-        height: 175px;
-    }
-}
-@media screen and (min-width: 375px) and (max-width: 425px)
-{
-    .logo
-    {
-        height: 60px;
-    }
-    header 
-    {
-        font-size: 1em;
-    }
-    .p 
-    {
-        font-size: 1.1em;
-    }
-    .barre_recherche
-    {
-        border-radius: 42px 60px 60px 42px;
-    }
-    .search
-    {
-        font-size: 1em;
-        width: 75%;
-    }
-    .loupe {
-        width: 55px;
-        border-radius: 15px;
-        font-size: 0.9em;
-    }
-    #img_localisation {
-        height: 50px;
-        width: 50px;
-        border-radius: 15px 0px 0px 15px;
-    }
-    .filtres_liste
-    {
-        font-size: 0.9em;
-    }
-    .filtres h2
-    {
-        font-size: 1.2em;
-    }
-    .Princpal h1, .Populaires_titre i , .titre_activités
-    {
-        font-size: 1.1em;
-    }
-    .Principal h2
-    {
-        font-size: 1.2em;
-        margin-top: 2%;
-    }
-    .Principal p 
-    {
-        font-size: 0.9em;
-    }
-    .figure1 
-    {
-        height: 200px;
-    }
-    .figure2 
-    {
-        height: 150px;
-    }
-    .étoiles2 li i 
-    {
-        font-size: 0.7em;
-    }
-    .Activités
-    {
-        font-size: 0.7em;
-    }
-    
-    .figure3, .figure4, .figure5, .figure6, .figure7, .figure8
-    {
-        height: 200px;
-    }
-    
-}
-@media screen and (min-width: 425px) and (max-width: 767px)
-{
-    .logo
-    {
-        height: 70px;
-    }
-    header 
-    {
-        font-size: 1.2em;
-    }
-    .p 
-    {
-        font-size: 1.2em;
-    }
-    .barre_recherche
-    {
-        border-radius: 42px 60px 60px 42px;
-    }
-    .search
-    {
-        font-size: 1.3em;
-        width: 80%;
-    }
-    .loupe {
-        width: 65px;
-        border-radius: 20px;
-        font-size: 1em;
-    }
-    #img_localisation {
-        height: 60px;
-        width: 60px;
-        border-radius: 20px 0px 0px 20px;
-    }
-    #Familial
-    {
-        padding-left: 24px;
-        padding-right:24px;
-    }
-    .filtres i 
-    {
-        padding: 22px;
-    }
-    .rechercher h1 
-    {
-        font-size: 1.7em;
-    }
-    .filtres h2
-    {
-        font-size: 1.4em;
-    }
-    .filtres .filtres_liste
-    {
-        font-size: 1.1em;
-    }
-    
-    .logements 
-    {
-        font-size: 1em;
-    }
-    .logements i 
-    {
-        padding: 5px 8px;
-        font-size: 0.7em;
-    }
-    .Principal h1, .Populaires_titre i, .titre_activités
-    {
-        font-size: 1.4em;
-    }
-    .Principal h2 
-    {
-        font-size: 1.3em;
-    }
-    .Principal p 
-    {
-        font-size: 1.1em;
-    }
-    .figure1
-    {
-        height: 230px;
-    }
-    .figure2 
-    {
-        height: 180px;
-    }
-    .étoiles2 li i 
-    {
-        font-size: 0.8em;
-    }
-    .Activités
-    {
-        font-size: 0.8em;
-    }
-    .figure3, .figure4, .figure5, .figure6, .figure7, .figure8
-    {
-        height: 210px;
-    }
-}
-@media screen and (min-width: 501px) and (max-width: 592px)
-{
-    .logo
-    {
-        height: 80px;
-    }
-    header 
-    {
-        font-size: 1.6em;
-    }
-    .p 
-    {
-        font-size: 1.5em;
-    }
-    .barre_recherche
-    {
-        border-radius: 75px 100px 100px 75px;
-    }
-    .search
-    {
-        font-size: 1.7em;
-        width: 75%;
-    }
-    .loupe {
-        width: 70px;
-        border-radius: 20px;
-        font-size: 1.5em;
-    }
-    #img_localisation {
-        height: 70px;
-        width: 70px;
-        border-radius: 20px 0px 0px 20px;
-    }
-    #Familial
-    {
-        padding-left: 26px;
-        padding-right:26px;
-    }
-    .filtres i 
-    {
-        padding: 24px;
-    }
-    .filtres h2
-    {
-        font-size: 1.6em;
-    }
-    .rechercher h1 
-    {
-        font-size: 2.1em;
-    }
-    .filtres .filtres_liste
-    {
-        font-size: 1.4em;
-    }
-    
-    .logements
-    {
-        font-size: 1.2em;
-    }
-    .logements i 
-    {
-        padding: 5px 10px;
-        font-size: 0.8em;
-    }
-    .Principal h1, .Populaires_titre i, .titre_activités
-    {
-        font-size: 1.6em;
-    }
-    .Principal h2 
-    {
-        font-size: 1.5em;
-    }
-    .Principal p 
-    {
-        font-size: 1.2em;
-    }
-    .figure1
-    {
-        height: 270px;
-    }
-    .figure2 
-    {
-        height: 200px;
-    }
-    .étoiles2 li i 
-    {
-        font-size: 1em;
-    }
-    .Activités
-    {
-        font-size: 0.9em;
-    }
-    .figure3, .figure4, .figure5, .figure6, .figure7, .figure8
-    {
-        height: 230px;
-    }
-}
-@media screen and (min-width: 592px) and (max-width: 767px)
-{
-    .logo
-    {
-        height: 90px;
-    }
-    header 
-    {
-        font-size: 1.8em;
-    }
-    .barre_recherche
-    {
-        border-radius: 32px 60px 60px 32px;
-    }
-    .search
-    {
-        font-size: 2em;
-        width: 70%;
-    }
-    .loupe {
-        width: 110px;
-        border-radius: 30px;
-        font-size: 2em;
-    }
-    #img_localisation {
-        height: 110px;
-        width: 110px;
-        border-radius: 30px 0px 0px 30px;
-    }
-    .p 
-    {
-        font-size: 1.8em;
-    }
-    #Familial
-    {
-        padding-left: 28px;
-        padding-right:28px;
-    }
-    .filtres i 
-    {
-        padding: 24px;
-    }
-    .filtres h2
-    {
-        font-size: 2.4em;
-    }
-    .rechercher h1 
-    {
-        font-size: 2.5em;
-    }
-    .filtres .filtres_liste
-    {
-        font-size: 1.8em;
-    }
-    .logements
-    {
-        font-size: 1.3em;
-    }
-    .logements i 
-    {
-        padding: 5px 12px;
-        font-size: 0.9em;
-    }
-    .Principal h1, .Populaires_titre i, .titre_activités
-    {
-        font-size: 2em;
-    }
-    .Principal h2 
-    {
-        font-size: 1.8em;
-    }
-    .Principal p 
-    {
-        font-size: 1.3em;
-    }
-    .figure1
-    {
-        height: 300px;
-    }
-    .figure2 
-    {
-        height: 220px;
-    }
-    .étoiles2 li i 
-    {
-        font-size: 1.1em;
-    }
-    .Activités
-    {
-        font-size: 1em;
-    }
-    .figure3, .figure4, .figure5, .figure6, .figure7, .figure8
-    {
-        height: 260px;
-    }
-}
-@media screen and (min-width: 701px) and (max-width: 767px)
-{
-    .logo 
-    {
-        height: 100px;
-    }
-    header
-    {
-        font-size: 2em;
-    }
-    .p 
-    {
-        font-size: 2em;
-    }
-    .barre_recherche
-    {
-        border-radius: 32px 60px 60px 32px;
-    }
-    .search
-    {
-        font-size: 2em;
-        width: 70%;
-    }
-    .loupe {
-        width: 110px;
-        border-radius: 30px;
-        font-size: 2.5em;
-    }
-    #img_localisation {
-        height: 110px;
-        width: 110px;
-        border-radius: 30px 0px 0px 30px;
-    }
-    
-    .filtres h2
-    {
-        font-size: 2.5em;
-    }
-    .rechercher h1 
-    {
-        font-size: 2.9em;
-    }
-    .filtres .filtres_liste
-    {
-        font-size: 2.2em;
-    }
-    
-    .logements
-    {
-        font-size: 1.6em;
-    }
-    .logements i 
-    {
-        padding: 5px 13px;
-        font-size: 1em;
-    }
-    .Principal h1, .Populaires_titre i 
-    {
-        font-size: 2.4em;
-    }
-    .Principal h2 
-    {
-        font-size: 2em;
-    }
-    .Principal p 
-    {
-        font-size: 1.4em;
-    }
-    .figure1
-    {
-        height: 350px;
-    }
-    .figure2 
-    {
-        height: 280px;
-    }
-    .étoiles2 li i 
-    {
-        font-size: 1.2em;
-    }
-    .Activités
-    {
-        font-size: 1.1em;
-    }
-    .figure3, .figure4, .figure5, .figure6, .figure7, .figure8
-    {
-        height: 280px;
-    }
-}
+/*Tablette*/
 @media screen and (min-width: 768px) and (max-width: 991px)
 {
     *{ 
@@ -1822,7 +1039,7 @@ footer a
     }
     .Populaires_titre i 
     {
-        font-size: 1.3em;
+        font-size: 1em;
     }
     .Populaires_liste
     {
@@ -1942,3 +1159,857 @@ footer a
         font-size: 0.8em;
     }
 }
+
+
+
+/*mobile*/
+@media screen and (max-width: 767px) 
+{
+    *{
+        margin: 0px;
+    }
+    
+    header
+    {
+        display: block;
+        margin: 0px;
+        font-size: 2em;
+    }
+    .block_image
+    {
+        text-align: center;
+    }
+    .logo 
+    {
+        height: 100px;
+        padding: 20px;
+    }
+    header nav  ul 
+    {
+        padding: 0px;
+    }
+     header nav ul li 
+    {
+        text-align: center;
+        width: 50%;
+        padding-left: 0%;
+    }
+    .p 
+    {
+        font-size: 2em;
+    }
+    .navigation1, .navigation2
+    {
+        display: block;
+        padding-bottom: 10px;
+        border-bottom: 2px solid black;
+    }
+    
+    .navigation1:hover, .navigation2:hover
+    {
+        display: block;
+        padding-bottom: 10px;
+        border-bottom: 2px solid blue;
+        color: blue;
+    }
+    .rechercher 
+    {
+        padding: 0px 5%;
+        margin: 0px;
+    }
+    .rechercher h1 
+    {
+        padding-top: 10%;
+        font-size: 2.9em;
+    }
+    .p 
+    {
+        padding: 3% 0%;
+    }
+    .bouton
+    {
+        display: none;
+    }
+    .search
+    {
+        padding-right: 15px;
+        border: 0px;
+        padding-left: 5%;
+        font-size: 2em;
+        width: 70%;
+    }
+    #img_localisation
+    {
+        object-fit: cover;
+        border: 0px;
+        height: 110px;
+        width: 110px;
+        border-radius: 30px 0px 0px 30px;
+    }
+    .loupe
+    {
+        display: block;
+        border: 0px ;
+        color: white;
+        background-color: #0065FC;
+        width: 110px;
+        border-radius: 30px;
+        font-size: 2.5em;
+    }
+    .barre_recherche 
+    {
+        width: 100%;
+        border: 1px solid rgba(201, 199, 199, 0.363);
+        margin: 10% 0% 10% 0%;
+        border-radius: 32px 60px 60px 32px;
+    }
+    .filtres
+    {
+        display: block;
+        width: 100%;
+    }
+    .filtres h2
+    {
+        width: auto;
+        font-size: 4em;
+    }
+    .filtres_liste 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 5%;
+        font-size: 3.8em;
+    }
+    .filtres_a 
+    {
+        margin-right: 2%;
+    }
+    .texte 
+    {
+        padding-right: 20px;
+    }
+    .filtres i 
+    {
+        padding: 22px;
+    }
+    #Familial
+    {
+        padding-left: 25px;
+        padding-right:25px;
+    }
+    .logements 
+    {
+        align-items: baseline;
+        padding: 5% 0px;
+        font-size: 1.6em;
+    }
+    .logements i 
+    {
+        padding: 5px 13px;
+        font-size: 1em;
+    }
+    .Principal
+    {
+        flex-direction: column-reverse;
+        width: auto;
+        padding: 0px;
+    }
+    .Principal h1 
+    {
+        padding: 5% 0px;
+        font-size: 2.4em;
+    }
+    .Populaires_titre i 
+    {
+        font-size: 2.4em;
+    }
+    .Principal h2
+    {
+        margin-top: 2%;
+        font-size: 2em;
+    }
+    .Principal p 
+    {
+        font-size: 1.4em;
+    }
+    .Hébergements
+    {
+        width: 90%;
+        margin: 0px;
+        border-radius: 0;
+        background-color: white;
+        padding: 5%;
+    }
+
+    .figures 
+    {
+        flex-direction: column;
+    }
+    .Hébergements_liste1_card {
+        margin-right: 0%;
+        width: auto;
+    }
+    .figure1 
+    {
+        box-shadow: 0px 0px 10px #0000002b;
+        height: 350px;
+    }
+    .figure1 p 
+    {
+        margin: 2% 0%;
+    }   
+    
+    .Principal .Plus
+    {
+        padding: 3% 0px;
+    }
+    .Populaires
+    {
+        padding: 5%;
+        border-radius: 0px;
+        width: auto;
+        margin: 0px;
+    }
+    .Populaires_titre
+    {
+        align-items: center;
+    }
+    .figure2
+    {
+        width: auto;
+        margin: 0px 0px 3% 0px;
+        height: 280px;
+    } 
+    .figure2 figcaption
+    {
+        padding: 2% 0% 2% 5%;
+    }
+    .figure2 p 
+    {
+        margin-top: 6%;
+    }
+    .étoiles2
+    {
+        font-size: 1.2em;
+    }
+    .block_activités
+    {
+        padding: 0px 5%;
+        
+    }
+    .Activités
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Raleway_bold;
+        margin: 0px;
+        font-size: 1.1em;
+    }
+    .titre_activités
+    {
+        margin: 8% 0px;
+    }
+    .Activités img 
+    {
+        width: auto;
+        object-position: center;
+    }
+    .Activités figcaption
+    {
+        border-radius: 0px 0px 18px 18px;
+        padding: 0px;
+    }
+    .Activités h2
+    {
+        padding: 19px 0px 19px 19px ;
+    }
+    .trois, .liste3, .six
+    {
+        width: 100%;
+    }
+    .figure3, .figure4, .figure5, .figure6, .figure7, .figure8
+    {
+        width: auto;
+        margin-bottom: 10%;
+        box-shadow: 0px 0px 10px #0000002b;
+        height: 280px;
+    }
+
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin-top: 5%;
+        padding:8% 5% 1% 5%;
+    }
+    
+}
+/*
+@media screen  and (max-width: 767px)
+{
+    .logo 
+    {
+        height: 100px;
+    }
+    header
+    {
+        font-size: 2em;
+    }
+    .p 
+    {
+        font-size: 2em;
+    }
+    .barre_recherche
+    {
+        border-radius: 32px 60px 60px 32px;
+    }
+    .search
+    {
+        font-size: 2em;
+        width: 70%;
+    }
+    .loupe {
+        width: 110px;
+        border-radius: 30px;
+        font-size: 2.5em;
+    }
+    #img_localisation {
+        height: 110px;
+        width: 110px;
+        border-radius: 30px 0px 0px 30px;
+    }
+    
+    .filtres h2
+    {
+        font-size: 4em;
+    }
+    .rechercher h1 
+    {
+        font-size: 2.9em;
+    }
+    .filtres_liste
+    {
+        font-size: 3.8em;
+    }
+    
+    .logements
+    {
+        font-size: 1.6em;
+    }
+    .logements i 
+    {
+        padding: 5px 13px;
+        font-size: 1em;
+    }
+    .Principal h1, .Populaires_titre i 
+    {
+        font-size: 2.4em;
+    }
+    .Principal h2 
+    {
+        font-size: 2em;
+    }
+    .Principal p 
+    {
+        font-size: 1.4em;
+    }
+    .figure1
+    {
+        height: 350px;
+    }
+    .figure2 
+    {
+        height: 280px;
+    }
+    .étoiles2 
+    {
+        font-size: 1.2em;
+    }
+    .Activités
+    {
+        font-size: 1.1em;
+    }
+    .figure3, .figure4, .figure5, .figure6, .figure7, .figure8
+    {
+        height: 280px;
+    }
+}
+*/
+@media screen  and (max-width: 701px)
+{
+    .logo
+    {
+        height: 90px;
+    }
+    header 
+    {
+        font-size: 1.8em;
+    }
+    .barre_recherche
+    {
+        border-radius: 32px 60px 60px 32px;
+    }
+    .search
+    {
+        font-size: 2em;
+        width: 70%;
+    }
+    .loupe {
+        width: 110px;
+        border-radius: 30px;
+        font-size: 2em;
+    }
+    #img_localisation {
+        height: 110px;
+        width: 110px;
+        border-radius: 30px 0px 0px 30px;
+    }
+    .p 
+    {
+        font-size: 1.8em;
+    }
+    #Familial
+    {
+        padding-left: 28px;
+        padding-right:28px;
+    }
+    .filtres i 
+    {
+        padding: 24px;
+    }
+    .filtres h2
+    {
+        font-size: 4em;
+    }
+    .rechercher h1 
+    {
+        font-size: 2.5em;
+    }
+    .filtres_liste
+    {
+        font-size: 2.9em;
+    }
+    .logements
+    {
+        font-size: 1.3em;
+    }
+    .logements i 
+    {
+        padding: 5px 12px;
+        font-size: 0.9em;
+    }
+    .Principal h1, .Populaires_titre i, .titre_activités
+    {
+        font-size: 2em;
+    }
+    .Principal h2 
+    {
+        font-size: 1.8em;
+    }
+    .Principal p 
+    {
+        font-size: 1.3em;
+    }
+    .figure1
+    {
+        height: 300px;
+    }
+    .figure2 
+    {
+        height: 220px;
+    }
+    .étoiles2
+    {
+        font-size: 1.1em;
+    }
+    .Activités
+    {
+        font-size: 1em;
+    }
+    .figure3, .figure4, .figure5, .figure6, .figure7, .figure8
+    {
+        height: 260px;
+    }
+}
+@media screen  and (max-width: 591px)
+{
+    .logo
+    {
+        height: 80px;
+    }
+    header 
+    {
+        font-size: 1.6em;
+    }
+    .p 
+    {
+        font-size: 1.5em;
+    }
+    .barre_recherche
+    {
+        border-radius: 75px 100px 100px 75px;
+    }
+    .search
+    {
+        font-size: 1.7em;
+        width: 75%;
+    }
+    .loupe {
+        width: 70px;
+        border-radius: 20px;
+        font-size: 1.5em;
+    }
+    #img_localisation {
+        height: 70px;
+        width: 70px;
+        border-radius: 20px 0px 0px 20px;
+    }
+    #Familial
+    {
+        padding-left: 26px;
+        padding-right:26px;
+    }
+    .filtres i 
+    {
+        padding: 24px;
+    }
+    .filtres h2
+    {
+        font-size: 2.4em;
+    }
+    .rechercher h1 
+    {
+        font-size: 2.1em;
+    }
+    .filtres_liste
+    {
+        font-size: 2.2em;
+    }
+    
+    .logements
+    {
+        font-size: 1.2em;
+    }
+    .logements i 
+    {
+        padding: 5px 10px;
+        font-size: 0.8em;
+    }
+    .Principal h1, .Populaires_titre i, .titre_activités
+    {
+        font-size: 1.6em;
+    }
+    .Principal h2 
+    {
+        font-size: 1.5em;
+    }
+    .Principal p 
+    {
+        font-size: 1.2em;
+    }
+    .figure1
+    {
+        height: 270px;
+    }
+    .figure2 
+    {
+        height: 200px;
+    }
+    .étoiles2 
+    {
+        font-size: 1em;
+    }
+    .Activités
+    {
+        font-size: 0.9em;
+    }
+    .figure3, .figure4, .figure5, .figure6, .figure7, .figure8
+    {
+        height: 230px;
+    }
+}
+@media screen and (max-width: 501px)
+{
+    .logo
+    {
+        height: 70px;
+    }
+    header 
+    {
+        font-size: 1.2em;
+    }
+    .p 
+    {
+        font-size: 1.2em;
+    }
+    .barre_recherche
+    {
+        border-radius: 42px 60px 60px 42px;
+    }
+    .search
+    {
+        font-size: 1.3em;
+        width: 80%;
+    }
+    .loupe {
+        width: 65px;
+        border-radius: 20px;
+        font-size: 1em;
+    }
+    #img_localisation {
+        height: 60px;
+        width: 60px;
+        border-radius: 20px 0px 0px 20px;
+    }
+    #Familial
+    {
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+    .filtres i 
+    {
+        padding: 18px;
+    }
+    .rechercher h1 
+    {
+        font-size: 1.7em;
+    }
+    .filtres h2
+    {
+        font-size: 2.1em;
+    }
+    .filtres_liste
+    {
+        font-size: 1.9em;
+    }
+    
+    .logements 
+    {
+        font-size: 1em;
+    }
+    .logements i 
+    {
+        padding: 5px 8px;
+        font-size: 0.7em;
+    }
+    .Principal h1, .Populaires_titre i, .titre_activités
+    {
+        font-size: 1.4em;
+    }
+    .Principal h2 
+    {
+        font-size: 1.3em;
+    }
+    .Principal p 
+    {
+        font-size: 1.1em;
+    }
+    .figure1
+    {
+        height: 230px;
+    }
+    .figure2 
+    {
+        height: 180px;
+    }
+    .étoiles2
+    {
+        font-size: 0.8em;
+    }
+    .Activités
+    {
+        font-size: 0.8em;
+    }
+    .figure3, .figure4, .figure5, .figure6, .figure7, .figure8
+    {
+        height: 210px;
+    }
+}
+@media screen and (max-width: 424px)
+{
+    .logo
+    {
+        height: 60px;
+    }
+    header 
+    {
+        font-size: 1em;
+    }
+    .p 
+    {
+        font-size: 1.1em;
+    }
+    .barre_recherche
+    {
+        border-radius: 42px 60px 60px 42px;
+    }
+    .search
+    {
+        font-size: 1em;
+        width: 75%;
+    }
+    .loupe {
+        width: 55px;
+        border-radius: 15px;
+        font-size: 0.9em;
+    }
+    #img_localisation {
+        height: 50px;
+        width: 50px;
+        border-radius: 15px 0px 0px 15px;
+    }
+    .filtres_liste
+    {
+        font-size: 1.5em;
+    }
+    .rechercher h1 
+    {
+        font-size: 1.5em;
+    }
+    .filtres h2
+    {
+        font-size: 1.2em;
+    }
+    .Principal h1, .Populaires_titre i , .titre_activités
+    {
+        font-size: 1.1em;
+    }
+    .Principal h2
+    {
+        font-size: 1.2em;
+        margin-top: 2%;
+    }
+    .Principal p 
+    {
+        font-size: 0.9em;
+    }
+    .figure1 
+    {
+        height: 200px;
+    }
+    .figure2 
+    {
+        height: 150px;
+    }
+    .étoiles2
+    {
+        font-size: 0.7em;
+    }
+    .Activités
+    {
+        font-size: 0.7em;
+    }
+    
+    .figure3, .figure4, .figure5, .figure6, .figure7, .figure8
+    {
+        height: 200px;
+    }
+    
+}
+@media screen and (max-width: 374px)
+{
+    .logo
+    {
+        height: 50px;
+    }
+    header 
+    {
+        font-size: 0.8em;
+    }
+    .barre_recherche
+    {
+        border-radius: 42px 60px 60px 42px;
+    }
+    .search
+    {
+        font-size: 1.2em;
+        width: 75%;
+    }
+    .loupe {
+        width: 55px;
+        border-radius: 15px;
+        font-size: 0.8em;
+    }
+    #img_localisation {
+        height: 50px;
+        width: 50px;
+        border-radius: 15px 0px 0px 15px;
+    }
+    .p 
+    {
+        font-size: 0.9em;
+    }
+    .filtres h2
+    {
+        font-size: 0.9em;
+    }
+    .rechercher h1 
+    {
+        font-size: 1.3em;
+    }
+    .filtres_liste
+    {
+        font-size: 1.3em;
+    }
+    #Familial
+    {
+        padding-left: 17px;
+        padding-right:17px;
+        
+    }
+    .filtres i 
+    {
+        padding: 14px;
+    }
+    .logements, .logements i 
+    {
+        font-size: 0.6em;
+    }
+    .logements i 
+    {
+        padding: 5px 7px;
+    }
+    .Principal h1, .Populaires_titre i, .titre_activités
+    {
+        font-size: 1em;
+    }
+    .Principal h2 
+    {
+        font-size: 0.9em;
+    }
+    .Principal p 
+    {
+        font-size: 0.7em;
+    }
+    .figure1
+    {
+        height: 150px;
+    }
+    .figure1 p 
+    {
+        margin: 2% 0px;
+    }
+    .figure2 
+    {
+        height: 130px;
+    }
+    .étoiles2
+    {
+        font-size: 0.6em;
+    }
+    .Activités
+    {
+        font-size: 0.6em;
+    }
+    .figure3, .figure4, .figure5, .figure6, .figure7, .figure8
+    {
+        height: 175px;
+    }
+}
+
+
+
