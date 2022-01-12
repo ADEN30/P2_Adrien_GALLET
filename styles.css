@@ -1211,8 +1211,8 @@ footer a
         padding-top: 0px;
         border-top: 0px;
         padding-bottom: 10px;
-        border-bottom: 2px solid blue;
-        color: blue;
+        border-bottom: 2px solid rgb(0, 162, 255);
+        color: rgb(0, 162, 255);
     }
     .rechercher 
     {
