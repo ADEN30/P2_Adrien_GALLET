@@ -507,15 +507,24 @@ footer a
 */
 @media screen and (max-width: 1440px)
 {
-    .navigation1:hover
-    {
-        padding-top: 33%;
-        border-top: 2px solid rgb(0, 162, 255);
+    .navigation1::before{
+        content:"";
+        display: flex;
+        height: 2px;
+        width: 120px;
+        position: absolute;
+        transform: translateX(-12.5%);
+        top: 0px;
     }
-    .navigation2:hover
+    .navigation2::before
     {
-        padding-top: 57%;
-        border-top: 2px solid rgb(0, 162, 255);
+        content:"";
+        display: flex;
+        transform: translateX(-25%);
+        height: 2px;
+        width: 90px;
+        position: absolute;
+        top: 0px;
     }
     .Populaires_titre
     {
@@ -538,15 +547,13 @@ footer a
     {
         font-size: 1.2em;
     }
-    .navigation1:hover
+    .navigation1:hover::before
     {
-        padding-top: 38%;
-        border-top: 2px solid rgb(0, 162, 255);
+        background-color: rgb(0, 162, 255);
     }
-    .navigation2:hover
+    .navigation2:hover::before
     {
-        padding-top: 68%;
-        border-top: 2px solid rgb(0, 162, 255);
+        background-color: rgb(0, 162, 255);
     }
     header 
     {
@@ -674,14 +681,6 @@ footer a
 }
 @media screen and (max-width: 1300px)
 {
-    .navigation1:hover
-    {
-        padding-top: 33%;
-    }
-    .navigation2:hover
-    {
-        padding-top: 57%;
-    }
     header 
     {
         font-size: 0.9em;
@@ -803,14 +802,6 @@ footer a
 }
 @media screen and (max-width: 1200px)
 {
-    .navigation1:hover
-    {
-        padding-top: 33%;
-    }
-    .navigation2:hover
-    {
-        padding-top: 57%;
-    }
     header
     {
         font-size: 0.9em;
@@ -932,13 +923,13 @@ footer a
 }
 @media screen and (max-width: 1100px)
 {
-    .navigation1:hover
+    .navigation1::before
     {
-        padding-top: 33%;
+        width: 100px;
     }
-    .navigation2:hover
+    .navigation2::before 
     {
-        padding-top: 57%;
+        width: 70px;
     }
     input   {  height: 40px;}
     .search     { font-size: 0.8em; }
